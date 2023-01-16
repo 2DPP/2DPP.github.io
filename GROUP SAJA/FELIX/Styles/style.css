@@ -1,0 +1,392 @@
+/*Background*/
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../Images/Backgrounds/Blue\ Dark\ -\ 5K.jpg");
+    background-position: center;
+    padding-top: 400px;
+    padding-bottom: 400px;
+    padding: 40px;
+    background-color: #141B35;
+}
+
+/*Navigation Bar*/
+nav {
+    position: relative;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 319px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+nav a {
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    text-shadow: 2px 2px #1E3B5399;
+    color: #4F9CB2;
+    text-decoration: none;
+    font-family: "SF Compact";
+    font-weight: 900;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+}
+
+nav a:before,
+nav a:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+nav a:before {
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+}
+
+nav a:after {
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px;
+}
+
+nav a:nth-child(1):before {
+    background-color: #C7E5E9;
+}
+
+nav a:nth-child(1):after {
+    background-color: #80D5DE;
+}
+
+nav a:nth-child(2):before {
+    background-color: #80D5DE;
+}
+
+nav a:nth-child(2):after {
+    background-color: #3A7687;
+}
+
+nav a:nth-child(3):before {
+    background-color: #4F9CB2;
+}
+
+nav a:nth-child(3):after {
+    background-color: #1E3B53;
+}
+
+#indicator {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+nav a:hover:before,
+nav a:hover:after {
+    transform: scale(1);
+}
+
+nav a:nth-child(1):hover~#indicator {
+    background: linear-gradient(130deg, #C7E5E9, #80D5DE);
+  }
+
+  nav a:nth-child(2):hover~#indicator {
+    left: 34%;
+    background: linear-gradient(130deg, #80D5DE,  #3A7687);
+  }
+
+  nav a:nth-child(3):hover~#indicator {
+    left: 70%;
+    background: linear-gradient(130deg, #4F9CB2, #1E3B53);
+  }
+
+label {
+    font-family: "Tahoma", sans-serif;
+    color: rgb(255, 255, 255)
+}
+
+a:hover {
+    color: rgba(62, 20, 20, 0.674);
+}
+
+a:visited {
+    color: rgba(35, 35, 218, 0.674);
+}
+
+table,
+th,
+td {
+    padding: 7px;
+    border: 3px solid white;
+    border-radius: 6px;
+    border-style: groove;
+    border-width: 1px;
+}
+
+/*Resources*/
+
+iframe {
+    margin-left: 11px;
+    margin-top: 25px;
+}
+
+
+.LogoPicture {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../Images/Eins.jpg");
+    background-size: cover;
+}
+
+.FacebookPicture {
+    margin-top: 17px;
+    margin-left: 44px;
+    margin-right: 44px;
+    position: middle;
+    width: 160px;
+    height: 160px;
+    border-radius: 35px;
+    background-image: url("../Images/Icons/Facebook.png");
+    background-size: cover;
+}
+
+.FigmaPicture {
+    margin-top: 17px;
+    margin-left: 44px;
+    margin-right: 44px;
+    position: middle;
+    width: 160px;
+    height: 160px;
+    background-image: url("../Images/Icons/Figma.png");
+    background-size: cover;
+}
+
+.ProfilePicture {
+    margin-top: 17px;
+    margin-left: 17px;
+    margin-right: 13px;
+    float: left;
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+    border: 1.3px solid #547c81b5;
+    background-image: url("../Images/Eins.jpg");
+    background-size: cover;
+}
+
+.PAboutMe {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h1 {
+    margin: 10px;
+    width: auto;
+    font-family: "SF Compact";
+    font-weight: 900;
+    text-shadow: 2px 2px #3a768799;
+    color: #C7E5E9;
+}
+
+h2 {
+    margin: 10px;
+    width: auto;
+    font-family: "SF Compact";
+    font-weight: 900;
+    text-shadow: 2px 2px #1E3B5399;
+    ;
+    color: #81b8c7;
+}
+
+h3 {
+    margin: 10px;
+    width: auto;
+    font-family: "SF Compact";
+    font-weight: 900;
+    color: #8da5b9;
+    text-shadow: 2px 2px #2d385f;
+}
+
+ul {
+    margin: 10px;
+    width: auto;
+    color: #a2b7c2;
+    text-shadow: 2px 2px #2d385f;
+    font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+}
+
+/*BlockOne Divs*/
+
+#BlockOne {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    padding: 8px;
+
+}
+
+.HeyItsMe {
+    width: 650px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(#a2bbbeb9, #62a6ae9d);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 2px solid #547c81b5;
+    color: #C7E5E9;
+    text-shadow: 2px 2px #3a768799;
+    font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+}
+
+.Figma {
+    width: 258px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(#a2bbbeb9, #62a6ae9d);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 2px solid #547c81b5;
+    color: #C7E5E9;
+    font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+}
+
+.Facebook {
+    width: 258px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(#a2bbbeb9, #62a6ae9d);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 2px solid #547c81b5;
+    color: #C7E5E9;
+    font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+}
+
+/*BlockTwo*/
+
+#BlockTwo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    padding: 8px;
+}
+
+.MyFavoriteSong {
+    width: 523px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(#3a7687b9, #1e3b539d);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 2px solid #26505Bb5;
+    color: #80D5DE;
+    text-shadow: 2px 2px #1E3B5399;
+    font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+}
+
+.AboutMe {
+    width: 690px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(#3a7687b9, #1e3b539d);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 2px solid #26505Bb5;
+    color: #81b8c7;
+    text-shadow: 2px 2px #1E3B5399;
+    font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+/*BlockThree*/
+
+#BlockThree {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 8px;
+}
+
+.MyLikesAndDislikes {
+    width: 281px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(#1e3b53b9, #141B359d);
+    backdrop-filter: blur(5.5px);
+    border: 2px solid #0E1325b5;
+    -webkit-backdrop-filter: blur(5.5px);
+    font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+}
+
+.Hobbies {
+    width: 281px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(#1e3b53b9, #141B359d);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 2px solid #0E1325b5;
+    font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+}
+
+.Favorites {
+    width: 220px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(#1e3b53b9, #141B359d);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 2px solid #0E1325b5;
+    font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+}
+
+.FunFacts {
+    width: 341px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(#1e3b53b9, #141B359d);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 2px solid #0E1325b5;
+    font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+}

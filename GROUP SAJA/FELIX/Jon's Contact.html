@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jon's Contact</title>
+</head>
+<style>
+  /*Background*/
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("file:///Users/jhoneinstienfelix/Documents/Visual%20Studio%20Code%20Projects/JhonsPortfolio/Images/Backgrounds/Blue%20-%205K.jpg");
+    background-position: center;
+    padding-top: 400px;
+    padding-bottom: 400px;
+    padding: 40px;
+    background-color: #141B35;
+  }
+
+  /*Navigation Bar*/
+  nav {
+    position: relative;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 319px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+  }
+
+  nav a {
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    text-shadow: 2px 2px #1E3B5399;
+    color: #4F9CB2;
+    text-decoration: none;
+    font-family: "SF Compact";
+    font-weight: 900;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+  }
+
+  nav a:before,
+  nav a:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+  }
+
+  nav a:before {
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+  }
+
+  nav a:after {
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px;
+  }
+
+  nav a:nth-child(1):before {
+    background-color: #C7E5E9;
+  }
+
+  nav a:nth-child(1):after {
+    background-color: #80D5DE;
+  }
+
+  nav a:nth-child(2):before {
+    background-color: #80D5DE;
+  }
+
+  nav a:nth-child(2):after {
+    background-color: #3A7687;
+  }
+
+  nav a:nth-child(3):before {
+    background-color: #4F9CB2;
+  }
+
+  nav a:nth-child(3):after {
+    background-color: #1E3B53;
+  }
+
+  #indicator {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+  }
+
+  nav a:hover {
+    color: #fff;
+  }
+
+  nav a:hover:before,
+  nav a:hover:after {
+    transform: scale(1);
+  }
+
+  nav a:nth-child(1):hover~#indicator {
+    background: linear-gradient(130deg, #C7E5E9, #80D5DE);
+  }
+
+  nav a:nth-child(2):hover~#indicator {
+    left: 34%;
+    background: linear-gradient(130deg, #80D5DE,  #3A7687);
+  }
+
+  nav a:nth-child(3):hover~#indicator {
+    left: 70%;
+    background: linear-gradient(130deg, #4F9CB2, #1E3B53);
+  }
+
+  /*ContactForm*/
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+  body,
+  button,
+  input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+
+  .background {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .screen {
+    position: relative;
+    background: #26505bdd;
+    border-radius: 15px;
+  }
+
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #26505bb9;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .screen-header-left {
+    margin-right: auto;
+  }
+
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+
+  .screen-header-button.close {
+    background: #ed1c6f;
+  }
+
+  .screen-header-button.maximize {
+    background: #e8e925;
+  }
+
+  .screen-header-button.minimize {
+    background: #74c54f;
+  }
+
+  .screen-header-right {
+    display: flex;
+  }
+
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+  }
+
+  .screen-body {
+    display: flex;
+  }
+
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #C7E5E9;
+    font-size: 26px;
+  }
+
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #A2BBBE;
+  }
+
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #A2BBBE;
+  }
+
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+
+  .app-form-control {
+    width: 800px;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+
+  .app-form-control::placeholder {
+    color: #A2BBBE;
+  }
+
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #A2BBBE;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .app-form-button:hover {
+    color: #A2BBBE;
+  }
+
+
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+
+    .app-title {
+      flex-direction: row;
+    }
+
+    .app-title span {
+      margin-right: 12px;
+    }
+
+    .app-title:after {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+</style>
+
+<body>
+  <nav>
+    <a href="Jon's Website.html">Home</a>
+    <a href="Jon's Contact.html">Contact</a>
+    <a href="../index.html">Return</a>
+    <div id="indicator"></div>
+  </nav>
+  <br><br />
+  <br><br />
+  <br><br />
+  <div class="container">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>CONTACT</span>
+            <span>ME</span>
+          </div>
+          <div class="app-contact">CONTACT INFO : +63 905 215 8585</div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="Name">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="Email">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="Contact Number">
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="Your Message">
+            </div>
+            <div class="app-form-group buttons">
+              <button class="app-form-button">CANCEL</button>
+              <button class="app-form-button">SEND</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
