@@ -3,14 +3,6 @@ body {
       pink 50%, white  );
       
 }
-   h1 {
-
-   font-family: 'Algerian','Segoe Print',  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-weight: 1;
-   font-size: 500%;
-   text-align: center;
-}
- 
 #hero {
     width: 30%;
     height: 120%;
