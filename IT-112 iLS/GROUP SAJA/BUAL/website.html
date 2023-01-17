@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Webpage/images/x-icon.png">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <title>Webpage</title>
+</head>
+<body>
+      <a href="#" id="scrollToTop">^</a>
+      <header>
+        <a href="/index.html" class="logo">SAJA</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#likes">Likes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </header>
+      <section >
+        <img src="images/stars.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moon Light</h2>
+        
+        <img src="images/mountains_front.png" id="mountains_front">
+      </section>
+      <div class="sec" id="sec">
+        <h2 class="h2" id="about">About Me :</h2><br>
+        <h3>The soft and mysterious guy who loves to play competitive games.</h3>
+      
+       <div class="container" id="likes">
+        <div class="card">
+        <div class="icon">
+          <ion-icon name="happy-outline"></ion-icon>
+        </div>
+          <div class="content">
+            <h2>Likes</h2>
+            <ul>
+              <li>Cool breezes.</li>
+              <li>Learning new things.</li>
+              <li>Rain</li>
+              <li>Spending quality time with loved ones.</li>
+              <li>Classical Music</li>
+              <li>Warm, cozy kitchen.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+        <div class="icon">
+          <ion-icon name="heart-dislike-outline"></ion-icon>
+        </div>
+          <div class="content">
+            <h2>Dislikes</h2>
+            <ul>
+              <li>Loud Noises</li>
+              <li>Spoiling the end of the movies and books.</li>
+              <li>Bright lights</li>
+              <li>Negativity on social media.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+        <div class="icon">
+          <ion-icon name="body-outline"></ion-icon>
+        </div>
+          <div class="content">
+            <h2>Hobbies</h2>
+            <ul>
+              <li>Playing online games.</li>
+              <li>I'm really into playing sport</li>
+              <li>Meditation</li>
+              <li>Cooking</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+      <div class="icon">
+        <ion-icon name="fast-food-outline"></ion-icon>
+      </div>
+        <div class="content">
+          <h2>Favorites</h2>
+          <ul>
+            <li>Adobo w/ Egg</li>
+            <li>Chicken Nuggets</li>
+            <li>Mochi</li>
+          </ul>
+      </div>
+  </div>
+  <div class="card">
+    <div class="icon">
+      <ion-icon name="sparkles-outline"></ion-icon>
+    </div>
+      <div class="content">
+        <h2>Fun Fact</h2>
+        <ul>
+          <li>Avocados are a fruit, not a vegetable. :D</li>
+          <li>It is impossible for most people to lick their own elbow.</li>
+          <li>It is physically impossible for pigs to look up into the sky.</li>
+        </ul>
+    </div>
+</div>
+    </div>
+  </div>
+ <div class="contact-section" id="contact">
+  
+  <h1>Contact Me</h1>
+  <div class="border"></div>
+
+  <form  class="contact-form" action="mailto:hiroshileo123@gmail.com" method="post" enctype="text/plain">
+  <input type="text" class="contact-form-text" placeholder="Your Name">
+  <input type="email" class="contact-form-text" placeholder="Your Email">
+  <input type="text" class="contact-form-text" placeholder="Your Phone">
+  <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+  <input type="submit" class="contact-form-btn" value="Submit">
+  </form>
+
+ </div>
+
+
+      
+     
+
+      <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+      </script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

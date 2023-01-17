@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "refresh" content = "3; url = Jon's Website.html"/>
+    <title>Loading</title>
+    <head>
+        <meta http-equiv="refresh" content="7; url='GROUP SAJA\FELIX\Preloader\._Jon's Preloader.html'"/>
+    <style>
+
+        body {background-color: #7A8C8E;}
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #container {
+            width: 200px;
+            height: 200px;
+        }
+
+        @keyframes animation {
+            0% {
+                stroke-dasharray: 1 98;
+                stroke-dashoffset: -105;
+            }
+
+            50% {
+                stroke-dasharray: 80 10;
+                stroke-dashoffset: -160;
+            }
+
+            100% {
+                stroke-dasharray: 1 98;
+                stroke-dashoffset: -300;
+            }
+        }
+
+        #spinner {
+            transform-origin: center;
+            animation-name: animation;
+            animation-duration: 1.2s;
+            animation-timing-function: cubic-bezier;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <svg viewBox="0 0 100 100">
+          <defs>
+            <filter id="shadow">
+              <feDropShadow dx="0" dy="0" stdDeviation="1.5" 
+                flood-color="#1e4b53"/>
+            </filter>
+          </defs>
+          <circle id="spinner" style="fill:transparent;stroke:#C7E5E9;stroke-width: 7px;stroke-linecap: round;filter:url(#shadow);" cx="50" cy="50" r="45"/>
+      </svg>
+      </div>
+</body>
+
+</html>
