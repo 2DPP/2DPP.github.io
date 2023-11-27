@@ -4,6 +4,7 @@ html {
     a smooth scrolling experience
     */
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
