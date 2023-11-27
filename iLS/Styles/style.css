@@ -1,0 +1,120 @@
+/* to remove html border spaces  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+html {
+    height: 1000%;
+    width: 100%;
+}
+body {
+    background-color: #3498DB;
+    
+}
+
+#header {
+        display: flex;
+        background-color: #ffffff;
+        width: 100%;
+        opacity: 70%;
+        
+       
+}
+
+#logo {
+        width: 10%;
+        height: auto;
+        
+}
+
+h1 {
+    padding-top:4%;
+}
+
+#homebg {
+        
+        width: 100%;
+        height: 200px;
+        background-color: #3498DB;
+       
+}
+#nav {
+    
+    display: flex;
+    align-items: center; 
+
+}
+
+ul {
+
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
+li {
+
+    display: list-item;
+    float:  right;
+
+}
+
+
+
+
+#slant {
+
+    width: 100%;
+    background-color: #ffffff;
+    padding: 5%;
+    clip-path: polygon(0 0, 0% 0, 100% 100%, 0 100%);
+    z-index: -1;
+
+}
+#intro {
+    padding:10%;
+    width: 100%;
+    background-color: #3498DB;
+    
+    z-index: 1;
+   
+    
+}
+h2 {
+    color: white;
+    font-size: 230%;
+}
+#sep {
+    background-color: white;
+    height: 100%;
+}
+#info{
+    background-color: white;
+    height: 800%;   
+   
+}
+.h3hed {
+    background-color: #3498DB;
+    border-radius: 0% 25px 25px 0%;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    color: #ffffff;
+
+}
+h3 {
+    font-size: 250%;
+}
+.container {
+    width: 40%;
+    text-align: center;
+}
+.desc {
+    font-weight: bold;
+    font-size: 150%;
+}
