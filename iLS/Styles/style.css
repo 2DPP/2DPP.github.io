@@ -239,7 +239,17 @@ textarea:hover {
     background-color: #bcd0fd;
 }
 
-/* Media Query for smaller screens */
+/* Media Query for tablets and smaller screens */
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 150%;
+    }
+    nav li {
+        margin: 0 10px;
+    }
+}
+
+/* Media Query for mobile phones */
 @media only screen and (max-width: 768px) {
     #header {
         flex-direction: column;
@@ -264,4 +274,28 @@ textarea:hover {
     .right-content {
         width: 100%;
     }
+    .contactcontainer {
+        width: 90%;
+    }
 }
+
+/* Media Query for smaller mobile phones */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 120%;
+    }
+    nav li {
+        margin: 0 5px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .left-content,
+    .right-content {
+        width: 100%;
+    }
+    .contactcontainer {
+        width: 90%;
+    }
+}
+
