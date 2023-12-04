@@ -1,103 +1,140 @@
-/* to remove html border spaces  */
-*{
+/* Resetting CSS to remove default margin and padding */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Helvetica', Arial, sans-serif;
 }
+
+/* Setting 100% height for HTML */
 html {
-    height: 1000%;
+    height: 100%;
     width: 100%;
 }
+
+/* Body styling */
 body {
     background-color: #3498DB;
-    
 }
 
+/* Header styling */
 #header {
-        display: flex;
-        background-color: #ffffff;
-        width: 100%;
-        opacity: 70%;
-        
-       
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    opacity: 80%;
 }
-
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+/* Logo styling */
 #logo {
-        width: 10%;
-        height: auto;
-        
+    width: 15%;
+    height: auto;
+    
 }
 
 h1 {
-    padding-top:4%;
+    margin: 0; 
+  
+    font-size: 180%;
+   
 }
 
-#homebg {
-        
-        width: 100%;
-        height: 200px;
-        background-color: #3498DB;
-       
-}
-#nav {
-    
+
+/* Navigation styling */
+nav {
     display: flex;
-    align-items: center; 
-
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ffffff;
 }
 
-ul {
-
+nav ul {
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
     text-decoration: none;
-    
+    color: black;
+    position: relative;
 }
 
-li {
-
-    display: list-item;
-    float:  right;
-
+/* Underline animation for contact and about */
+#about-link::before,
+#contact-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    background-color: #000000; 
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; 
 }
 
+#about-link:hover::before,
+#contact-link:hover::before {
+    width: 100%;
+}
 
+/* Home background styling */
+#homebg {
+    width: 100%;
+    height: 200px;
+    background-color: #3498DB;
+}
 
+/* Introduction section styling */
+#intro {
+    padding: 5%;
+    width: 100%;
+    background-color: #3498DB;
+    z-index: 1;
+}
 
+h2 {
+    color: white;
+    font-size: 230%;
+}
+
+/* Slant effect styling */
 #slant {
-
     width: 100%;
     background-color: #ffffff;
     padding: 5%;
     clip-path: polygon(0 0, 0% 0, 100% 100%, 0 100%);
     z-index: -1;
+    margin-bottom: -1px; 
+}
 
-}
-#intro {
-    padding:10%;
-    width: 100%;
-    background-color: #3498DB;
-    
-    z-index: 1;
-   
-    
-}
-h2 {
-    color: white;
-    font-size: 230%;
-}
+/* Separator styling */
 #sep {
     background-color: white;
     height: 100%;
 }
-#info{
+
+/* Information section styling */
+#info {
     background-color: white;
-    height: 800%;   
+    height: 800%;
    
 }
+
+/* Heading styling */
 .h3hed {
     background-color: #3498DB;
     border-radius: 0% 25px 25px 0%;
@@ -105,16 +142,100 @@ h2 {
     padding: 1%;
     text-align: center;
     color: #ffffff;
-
+    
 }
+
 h3 {
     font-size: 250%;
 }
+
+/* Container styling */
 .container {
-    width: 40%;
-    text-align: center;
+    width: 80%;
+  
 }
+
+.content {
+    display: flex;
+}
+
+.left-content {
+    width: 50%; 
+}
+
+
+.right-content {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Description styling */
 .desc {
     font-weight: bold;
     font-size: 150%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    margin-left: 1%;
+}
+
+
+/* Contact form container styling */
+.contactcontainer {
+    background-color: rgb(43, 98, 180);
+    padding: 5%;
+    border: 3px black solid;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px 3px black;
+}
+
+/* Form styling */
+form {
+    padding: 5%;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #9B59B6;
+    color: white;
+    padding: 12px 20px;
+    border: 3px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: orange;
+}
+
+/* Hover effect for input and textarea */
+input:hover,
+textarea:hover {
+    background-color: #bcd0fd;
 }
