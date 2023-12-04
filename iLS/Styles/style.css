@@ -6,7 +6,7 @@
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Setting 100% height for HTML */
+
 html {
     height: 100%;
     width: 100%;
@@ -70,6 +70,7 @@ nav a {
     text-decoration: none;
     color: black;
     position: relative;
+    font-weight: bold;
 }
 
 /* Underline animation for contact and about */
@@ -150,8 +151,15 @@ h3 {
 
 /* Container styling */
 .container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
     width: 80%;
   
+}
+.container.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .content {
@@ -167,7 +175,8 @@ h3 {
     width: 50%; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
+   
 }
 
 /* Description styling */
@@ -195,6 +204,7 @@ h3 {
 /* Form styling */
 form {
     padding: 5%;
+  
 }
 
 /* Label styling */
@@ -238,6 +248,88 @@ input:hover,
 textarea:hover {
     background-color: #bcd0fd;
 }
+/* Footer styling */
+footer {
+    margin-top: 5%;
+    background-color: #00BFFF;
+    display: flex;
+    justify-content:center;
+
+   
+}
+#footer-content {
+    display: flex;
+    align-items: center;
+}
+
+#logocontainer {
+    width: 30%;
+}
+/* Logo styling in footer */
+#logofooter {
+    width: 15%;
+    margin-left: 5%;
+    
+
+}
+
+/* Footer heading styling */
+#footerh1 {
+    font-size: 130%;
+    color: white;
+    margin: 0;
+}
+
+
+#copyrightcontainer {
+    flex: 1;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+/* Copyright text styling */
+#copyright {
+    text-align: center;
+}
+#icons {
+    margin-right: 5%;
+}
+/* SVG icons styling */
+#fb,
+#x,
+#ig {
+    width: 50px;
+    height: 50px;
+    margin: 10px; 
+    transition: transform 0.5s ease; 
+   
+}
+
+/*  keyframe animation  infinite flipping,  color brightness change */
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+        filter: brightness(1);
+    }
+    50% {
+        transform: rotateY(180deg);
+        filter: brightness(2); 
+    }
+    100% {
+        transform: rotateY(360deg);
+        filter: brightness(1);
+    }
+}
+
+#fb:hover,
+#x:hover,
+#ig:hover {
+    animation: flip 2s infinite linear;
+    transform-origin: center;
+    fill: #9B59B6;
+}
+
 
 /* Media Query for tablets and smaller screens */
 @media only screen and (max-width: 1024px) {
@@ -298,4 +390,3 @@ textarea:hover {
         width: 90%;
     }
 }
-
