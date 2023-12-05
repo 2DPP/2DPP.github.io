@@ -296,6 +296,9 @@ footer {
 #icons {
     margin-right: 5%;
 }
+#icons a {
+    text-decoration: none;
+}
 /* SVG icons styling */
 #fb,
 #x,
