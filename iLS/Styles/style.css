@@ -122,7 +122,7 @@ h2 {
     margin-bottom: -1px; 
 }
 
-/* Separator styling */
+
 #sep {
     background-color: white;
     height: 100%;
@@ -296,9 +296,6 @@ footer {
 #icons {
     margin-right: 5%;
 }
-#icons a {
-    text-decoration: none;
-}
 /* SVG icons styling */
 #fb,
 #x,
@@ -333,7 +330,9 @@ footer {
     transform-origin: center;
     fill: #9B59B6;
 }
-
+#icons a {
+    text-decoration: none;
+}
 
 /* Media Query for tablets and smaller screens */
 @media only screen and (max-width: 1024px) {
@@ -343,25 +342,76 @@ footer {
     nav li {
         margin: 0 10px;
     }
+    #logofooter {
+        width: 45px;
+    }
+    #footerh1{
+        font-size: 13pt;
+    }
+    #copyright{
+        font-size: 13pt;
+        margin:auto;
+    }
+    #fb,
+    #x,
+    #ig {
+        width: 50px;
+        height: 50px;
+        margin: 5px; 
+        transition: transform 0.5s ease; 
+       
+    }
 }
 
 /* Media Query for mobile phones */
 @media only screen and (max-width: 768px) {
     #header {
-        flex-direction: column;
-        align-items: flex-start;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
     }
+
     .logo-container {
-        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
     }
+
     h1 {
         font-size: 150%;
+        margin-left: 10px; 
     }
+
     nav {
-        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
     nav li {
         margin: 0 10px;
+    }
+    #homebg{
+        height: 180px;
+        width: 50%;
+    }
+    .h3hed{
+        width: 50%;
+    }
+    h2{ 
+        font-size: 250%;
+    }
+    h3{
+        font-size: 140%;
+    }
+    .desc {
+        font-size: 60%;
+     
     }
     .content {
         flex-direction: column;
@@ -372,25 +422,110 @@ footer {
     }
     .contactcontainer {
         width: 90%;
+    }
+    #logofooter {
+        width: 45px;
+    }
+    #footerh1{
+        font-size: 13pt;
+    }
+    #copyright{
+        font-size: 13pt;
+        margin:auto;
+    }
+    #fb,
+    #x,
+    #ig {
+        width: 45px;
+        height: 45px;
+        margin: 5px; 
+        transition: transform 0.5s ease; 
+       
     }
 }
 
 /* Media Query for smaller mobile phones */
 @media only screen and (max-width: 480px) {
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
     h1 {
         font-size: 120%;
+        margin-left: 10px; 
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #homebg{
+        height: 130px;
+        width: 50%;
+    }
+    #intro {
+        margin-bottom: 15px;
     }
     nav li {
-        margin: 0 5px;
+        margin-right: 5px;
+    }
+    .h3hed{
+        width: 60%;
+    }
+    h2{ 
+        font-size: 250%;
+    }
+    h3{
+        font-size: 140%;
+    }
+    .desc {
+        font-size: 80%;
     }
     .content {
         flex-direction: column;
     }
+
     .left-content,
     .right-content {
         width: 100%;
     }
+
     .contactcontainer {
-        width: 90%;
+        width: 80%;
     }
+    #logofooter {
+        width: 25px;
+    }
+    #footerh1{
+        font-size: 8pt;
+    }
+    #copyright{
+        font-size: 7pt;
+        margin:auto;
+    }
+    #fb,
+#x,
+#ig {
+    width: 20px;
+    height: 30px;
+    margin: 3px; 
+    transition: transform 0.5s ease; 
+   
 }
+}
+
