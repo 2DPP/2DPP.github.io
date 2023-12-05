@@ -8,8 +8,7 @@
     <title>The ProblemPal Team</title>
 </head>
 <body>
-    <div id="homeheader" class="hidden">
-        <a id="home" href="index.html">Home</a>
+
         
     </div>
     <div id= "header1">
@@ -21,17 +20,17 @@
     to each member  -->
     <div id="profilesnav">
         <div class="profiles">
-            <a href="#nathan"><img class="aimg" src="Images\test pic2.jpg"></a>
+            <a href="#nathan"><img class="aimg" src="Images\Bucoy.jpg"></a>
             <h2> Bucoy, <br> Nathan Xander </h2>
         </div>
 
         <div class="profiles">
-            <a href="#catubag"><img class="aimg" src="Images\test pic2.jpg"></a>
+            <a href="#catubag"><img class="aimg" src="Images\Catubag.jpg"></a>
             <h2> Catubag,<br>Johnmark </h2>
             </div>
 
         <div class="profiles">
-            <a href="#riosa"><img class="aimg" src="Images\test pic2.jpg"></a>
+            <a href="#riosa"><img class="aimg" src="Images\Riosa.jpg"></a>
             <h2> Riosa, <br>John Coddy </h2>
             </div>
 
@@ -61,15 +60,15 @@
        
     </p>
 
-    <!-- scroll to top button-->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+ 
+
 <!-- the p here is for scroll to profile purpose-->
     <div class="seperator"> <p id="nathan"></p></div>
     <div class="profilebody">
         <div class="profilename"> <h2> Nathan Xander Bucoy </h2></div>
         <div class="container">
         <div class="profileinfo">
-            <img class="pimage" src="Images\test pic2.jpg">
+            <img class="pimage" src="Images\Bucoy.jpg">
             <p class="skills">
                  Skills: <br>
                 Problem Solving <br>
@@ -79,9 +78,9 @@
                 </div>
                 <div class="motto"> <p class="mottotext">
 
-                    “I enjoy coding” <br>
+                    “I enjoy coding” <br><br>
     
-                    I am a student learning web programming and app development.
+                    I am a student learning web programming and app development.<br>
                      I aspire to have a good IT related job in the future.
                     </p>
                 </div>
@@ -95,7 +94,7 @@
         <div class="profilename"> <h2> JohnMark Catubag </h2></div>
         <div class="container">
         <div class="profileinfo">
-            <img class="pimage" src="Images\test pic2.jpg">
+            <img class="pimage" src="Images\Catubag.jpg">
             <p class="skills">
                 Skills:<br>
                 Time management <br>
@@ -106,9 +105,9 @@
                 </div>
                 <div class="motto"> <p class="mottotext">
 
-                    “I enjoy coding” <br>
+                    “I enjoy coding” <br><br>
     
-                    I am a student learning web programming and app development.
+                    I am a student learning web programming and app development.<br>
                      I aspire to have a good IT related job in the future.
                     </p>
                 </div>
@@ -120,7 +119,7 @@
             <div class="profilename"> <h2> John Coddy Riosa </h2></div>
             <div class="container">
             <div class="profileinfo">
-                <img class="pimage" src="Images\test pic2.jpg">
+                <img class="pimage" src="Images\Riosa.jpg">
                 <p class="skills">
                    Skills: <br>
                    Linguistics,<br>
@@ -133,12 +132,11 @@
                     </div>
                     <div class="motto"> <p class="mottotext">
     
-                        <b>“Code, Create, Conquer.”</b> <br><br>
-                        Coding is the future; our pathway to progress. <br>
-                        To navigate the evolving landscape of technology, <br>
-                        we embark on a journey to learn the language of innovation. <br><br>
-                        By coding, we gain the power to understand, create, and ultimately conquer the challenges of the new era. <br><br>
-                        Every line of code is a step towards shaping a future where possibilities are limitless, and our creativity knows no bounds.
+                        <b>“Code, Create, Conquer.” <br><br>
+                         I'm  one of the students from IT-212,<br><br> I like using HTML/CSS <br>
+                        and this website is one of the product of my interest in HTML/CSS<br><br>
+                        I aspire to be a good developer one day or at least something cool in the future.
+                    </b>
 
                     </div>
                 </div>
@@ -158,10 +156,10 @@
                         </div>
                         <div class="motto"> <p class="mottotext">
         
-                            “I enjoy coding” <br>
+                            “I enjoy coding” <br><br>
             
-                            I am a student learning web programming and app development.
-                             I aspire to have a good IT related job in the future.
+                            I am a student and i like to explore and learn more about different things
+
                             </p>
                         </div>
                     </div>
@@ -175,66 +173,88 @@
                         <img class="pimage" src="Images\test pic2.jpg">
                         <p class="skills">
                             Skills:<br>
-                            Basics on coding<br>
+                            Time Management,<br>
+                            Emotional Intelligence<br>
                             </p>
                           
                             </div>
                             <div class="motto"> <p class="mottotext">
             
-                                “I enjoy coding” <br>
+                                “Do not make yesterday an excuse for not succeeding today.” <br>
                 
-                                I am a student learning web programming and app development.
-                                 I aspire to have a good IT related job in the future.
+                                I am a student who enjoys playing games and studies diligently for the future.<br>
+                                 I am learning coding because I want to create my own app to become successful in the future.
                                 </p>
                             </div>
                         </div>
                         
                     </div>
-                   
-                  
-                    
-                    <footer>
-                        <p> Copyright © 2023 2DPP. All Rights Reserved.</p>
-                    </footer>
-                    <script>
- let mybutton = document.getElementById("myBtn");
-let homeHeader = document.getElementById("homeheader");
+                    <input type="checkbox" id="menu-toggle" style="display: none;">
 
-window.onscroll = function() {
+                    <div id="vertical-menu">
+                      <div class="sub-menu">
+                        <button class="menu-button">
+                          <!-- home button -->
+                         <a href ="index.html"> <svg id="home" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#9B59B6"/>
+                            <path d="M16 31.7416L42 10H42.52L68 31.7416V32.7528H59.68V55H48.24V41.3483L47.2 39.8315H36.8L35.24 41.3483V55H24.32V32.7528H16V31.7416Z" fill="white" stroke="white"/>
+                          </svg></a>
+                        </button>
+                        
+                        <button class="menu-button">
+                         <!-- scroll to top button-->
+                          <svg id="scrollbtn" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#9B59B6"/>
+                            <path d="M42.7113 9L22.4227 31.08L22 31.54H33.8351V55H51.1649V31.54H63L42.7113 9Z" fill="white" stroke="white"/>
+                          </svg>
+                        </button>
+                      </div>
+                  
+                      <label for="menu-toggle" class="menu-button">
+                        <!-- main button -->
+                        <svg id ="menubtn" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#9B59B6"/>
+                          <path d="M36 13V29H20V41.5H36V57.5H48.5V41.5H64.5V29H48.5V13H36Z" fill="white" stroke="white"/>
+                        </svg>
+                  
+                      </label>
+                    </div>
+                    <footer>
+                        <p> Copyright © 2023 ProblemPal. All Rights Reserved.</p>
+                    </footer>
+                    
+                    <script>
+
+let menuButton = document.getElementById('menubtn');
+let scrollButton = document.getElementById('scrollbtn');
+
+
+let middleScroll = window.innerHeight / 2;
+
+// Hide menuButton and other buttons initially
+menuButton.style.opacity = '0';
+menuButton.style.transition = 'opacity 0.5s ease';
+scrollButton.style.display = 'none';
+
+// Handle scroll event
+window.onscroll = function () {
     scrollFunction();
-    scrollHomeHeader();
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-
-    // Check if the header should be hidden or visible
-    var header = document.getElementById("header");
-    var shouldHide = window.scrollY > 100;
-
-    if (shouldHide) {
-        header.classList.remove("hidden");
-    } else {
-        header.classList.add("hidden");
+    if (document.body.scrollTop > middleScroll || document.documentElement.scrollTop > middleScroll) {
+        // Show menuButton and other buttons with a smooth fade-in effect
+        menuButton.style.display = 'block';
+        menuButton.style.opacity = '1';
+        scrollButton.style.display = 'block';
     }
 }
 
-function scrollHomeHeader() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        homeHeader.classList.remove("hidden");
-    } else {
-        homeHeader.classList.add("hidden");
-    }
-}
-
-function topFunction() {
+// Handle click event on #scrollbtn
+scrollButton.addEventListener('click', function () {
     // Smooth scroll to the top with a delay
     smoothScrollToTop(500);
-}
+});
 
 function smoothScrollToTop(duration) {
     const start = window.scrollY;
@@ -261,10 +281,15 @@ function smoothScrollToTop(duration) {
     requestAnimationFrame(animateScroll);
 }
 
+            // Toggle the submenu when the main button is clicked
+    document.getElementById('menu-toggle').addEventListener('change', function() {
+      var subMenu = document.querySelector('.sub-menu');
+      subMenu.style.maxHeight = this.checked ? '100vh' : '0';
+    });
+
                     </script>
                     
-                    
      
-        <!-- labyu sir penge plus points <3 -->
+        <!--  sir penge plus points <3 -->
 </body>
 </html>
