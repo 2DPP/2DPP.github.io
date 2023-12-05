@@ -20,21 +20,7 @@ body {
     background-color: black;
     font-family: 'Helvetica', Arial, sans-serif ;
 }
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
-    
-    html {
-      width: 100%;
-      scroll-behavior: smooth;
-    }
-    
-    body {
-      background-color: black;
-      font-family: 'Helvetica', Arial, sans-serif;
-    }
+
     
     #header1 {
       margin-top: 3%;
@@ -297,5 +283,112 @@ footer {
 }
 /* Media Query for smaller mobile phones */
 @media only screen and (max-width: 480px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  #header1 {
+    margin-top: 3%;
+    width: 90%;
+ 
+  }
+  
+  #profilesnav {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    background-color: rgb(201, 197, 197);
+    padding: 1%;
+    justify-content: space-between;
+    height: 150px;
+  }
+  
+  .profiles {
+    position: relative;
+    width: 10%;
+    height: 300px;
+    padding: 2%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items in the center */
+  }
+  
+  .profiles:hover .aimg {
+    transform: scale(1.2);
+  }
+  
+  .aimg {
+    width: 180%;
+    height: 200%;
+    max-height: 70%; /* Limit the maximum height */
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    margin: auto;
+  }
+  
+  .aimg:hover {
+    transform: scale(1.2);
+  }
+  
+  h2 {
+    font-size: 10pt;
+    margin-top: 3%;
+    margin-left: 55%;
+   
+  }
+  
+  #meet {
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 250%;
+  }
+#header2 {
+width: 90%;
+background-color: #3498DB;
+clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+margin-left: 5%;
+margin-right: 5%;
+}
+#we {
 
+  margin-left: 43%;
+}
+p {
+  font-size: 10pt;
+  margin: auto;
+}
+.seperator{
+  margin-top: 15px;
+}
+.pfname {
+  font-size: 10pt;
+}
+.skills {
+  margin-top: 25px;
+}
+.mottotext{
+  font-size: 8pt;
+}
+.profileinfo {
+width: 50% ;
+}
+.pimage {
+  width: 55px;
+  height: 50px;
+  top: -23%;
+}
+.menu-button svg {
+  width: 40px;
+  height: 30px;
+  border-radius: 60px;
+  transition: box-shadow 0.3s ease;
+  padding: 1px;
+  margin-top: 5px;
+  
+}
 }
