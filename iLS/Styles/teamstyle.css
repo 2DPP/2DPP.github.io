@@ -1,4 +1,4 @@
-* {
+** {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -64,7 +64,7 @@ body {
       border: 2px solid black;
       border-radius: 50%;
       transition: transform 0.3s;
-      margin: auto;
+  
     }
     
     .aimg:hover {
@@ -103,6 +103,7 @@ p {
     color: white;
     font-weight: bold;
     font-size: large;
+    margin-bottom: 2%;
 
 }
 
@@ -148,7 +149,7 @@ p {
     background-color: #9B59B6;
     border-radius: 25px;
     width: 50%;
-    height: 100%;
+    height: 300px;
     text-align: center;
     color: white;
     margin: 20%;
@@ -274,11 +275,59 @@ p {
 footer {
   margin: 15px;
 }
+@media only screen and (max-width: 1424px) {
+  #we {
+    margin-left: 70%;
+    
+  }
+  #profilesnav {
+    height: 350px;
+  }
+  .profileinfo {
+    height: 230px;
+  }
+}
 @media only screen and (max-width: 1024px) {
+  #we {
+    margin-left: 65%;
+    
+  }
+  #profilesnav {
+    height: 300px;
+  }
+}
 
- }
-
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 780px) { 
+#we {
+  margin-left: 60% ;
+}
+h2 {
+  margin-left: 0;
+  font-size: 15pt;
+}
+.aimg{
+  width: 100px;
+  height: 150px;
+}
+.pimage{
+  width: 100px;
+}
+#profilesnav {
+  height: 300px;
+}
+.profileinfo {
+  height: 200px;
+}
+.pimage{
+  height: 100px;
+  top:-35%;
+}
+.mottotext{
+  font-size: 12pt;
+}
+.profilename {
+  margin-bottom: 25px;
+}
 
 }
 /* Media Query for smaller mobile phones */
@@ -304,7 +353,9 @@ footer {
     justify-content: space-between;
     height: 150px;
   }
-  
+  .container {
+    margin-top: 55px;
+  }
   .profiles {
     position: relative;
     width: 10%;
