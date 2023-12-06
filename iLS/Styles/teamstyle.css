@@ -73,6 +73,7 @@ body {
     }
     
     h2 {
+      font-size: 50pt;
       margin-top: 3%;
       margin-left: 55%;
      
@@ -276,13 +277,7 @@ p {
 footer {
   margin: 15px;
 }
-@media only screen and (max-width: 1920px) { 
 
-}
-@media only screen and (max-width: 1620px) { 
-
-
-}
 @media only screen and (max-width: 1424px) {
   #we {
     margin-left: 70%;
@@ -304,9 +299,9 @@ footer {
     height: 300px;
   }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
   #we {
-    margin-left: 60%;
+    margin-left: 70%;
   }
   .profileinfo {
     height: 230px;
@@ -318,12 +313,15 @@ footer {
     margin-top: 15px;
   }
   .profilename {
-    width: 200px;
-    margin-left: 17%;
+    width: 250px;
+    margin-left: 23.5%;
   }
   h2 {
-    font-size: 5pt;
+    font-size: 15pt;
   }
+}
+.profileinfo {
+  height: 250px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -386,6 +384,7 @@ h2 {
     box-sizing: border-box;
   }
   #header1 {
+
     margin-top: 3%;
     width: 90%;
  
@@ -455,8 +454,8 @@ margin-left: 5%;
 margin-right: 5%;
 }
 #we {
-
-  margin-left: 43%;
+  font-size: 20pt;
+  margin-left: 50%;
 }
 p {
   font-size: 10pt;
