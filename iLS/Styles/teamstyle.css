@@ -1,4 +1,4 @@
-** {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -39,6 +39,7 @@ body {
       background-color: rgb(201, 197, 197);
       padding: 5%;
       justify-content: space-between;
+      margin-left: 0;
     }
     
     .profiles {
@@ -275,6 +276,13 @@ p {
 footer {
   margin: 15px;
 }
+@media only screen and (max-width: 1920px) { 
+
+}
+@media only screen and (max-width: 1620px) { 
+
+
+}
 @media only screen and (max-width: 1424px) {
   #we {
     margin-left: 70%;
@@ -313,6 +321,7 @@ h2 {
   width: 100px;
 }
 #profilesnav {
+  margin-left: 0;
   height: 300px;
 }
 .profileinfo {
@@ -398,6 +407,7 @@ h2 {
     font-weight: bold;
     font-size: 250%;
   }
+
 #header2 {
 width: 90%;
 background-color: #3498DB;
