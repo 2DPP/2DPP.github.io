@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica', Arial, sans-serif;
+    
 }
 
 
@@ -16,6 +16,7 @@ html {
 /* Body styling */
 body {
     background-color: #3498DB;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Header styling */
@@ -110,6 +111,7 @@ nav a {
 h2 {
     color: white;
     font-size: 230%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Slant effect styling */
@@ -255,6 +257,7 @@ footer {
     background-color: #00BFFF;
     display: flex;
     justify-content:center;
+    font-family: 'Open Sans', sans-serif;
 
    
 }
@@ -292,6 +295,7 @@ footer {
 /* Copyright text styling */
 #copyright {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 #icons {
     margin-right: 5%;
