@@ -192,6 +192,69 @@ h3 {
 }
 
 
+#features {
+    text-align: center;
+    padding: 3%;
+}
+#featurecontent{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.h4containerL {
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5%;
+    width: 200px;
+    font-size: 20pt;
+    margin-left: 25px;
+}
+.h4containerR {
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5%;
+    width: 200px;
+    font-size: 20pt;
+
+    margin-left: 83%;
+
+}
+.featimgcontainer {
+ display: flex;
+}
+.featimg {
+    width: 35%;
+    height: 30%;
+    margin-left: 50px;
+
+}
+
+.feattextR{
+    margin-right: 25px;
+}
+
+.feattextL{
+    margin-left: 25px;
+}
+h4 {
+    border-radius: 25px;
+    background: #3498DB;
+}
+
+#contacthead {
+    padding: 3%;
+    text-align: center;
+}
+#contactbg {
+    background-color: white;
+    padding: 5%;
+}
 /* Contact form container styling */
 .contactcontainer {
     background-color: rgb(43, 98, 180);
@@ -200,6 +263,7 @@ h3 {
     width: 80%;
     margin: auto;
     margin-top: 5%;
+    margin-bottom: 5%;
     border-radius: 25px;
     box-shadow: 1px 1px 5px 3px black;
 }
@@ -251,9 +315,10 @@ input:hover,
 textarea:hover {
     background-color: #bcd0fd;
 }
+
 /* Footer styling */
 footer {
-    margin-top: 5%;
+    
     background-color: #00BFFF;
     display: flex;
     justify-content:center;
