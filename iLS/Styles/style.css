@@ -111,7 +111,7 @@ nav a {
     text-align: center;
     align-items: center;
     display: flex;
-    flex-direction: column; /* Display children in a column layout */
+    flex-direction: column; 
 }
 
 #hero-container {
@@ -258,6 +258,7 @@ h3 {
     width: 430px;
     font-size: 20pt;
     margin-left: auto;
+    margin-right: 15px;
 
 
 }
@@ -468,7 +469,7 @@ footer {
         margin:auto;
     }
     #fb,
-    #x,
+    #x,a
     #ig {
         width: 50px;
         height: 50px;
@@ -491,6 +492,46 @@ footer {
         display: flex;
         align-items: center;
     }
+    #hero-container {
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        margin-bottom: 20px; 
+    }
+    
+    #heroimg {
+        height: 300px;
+        width: 450px;
+        margin-right: 10px; 
+        margin-left: -40px;
+       
+    }
+    
+    #herop {
+        color: white;
+        font-size: 50pt;
+        font-family: 'Roboto', sans-serif;
+        margin-left: -130px; 
+        color: #000000;
+        font-weight: bold;
+        text-align: start;
+        
+    }
+    
+    h2 {
+        color: white;
+        font-size: 200%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    #download {
+        margin-top: 15px;
+        width: 250px;
+        height: 150px;
+    }
+ #slant {
+    height: 120px;
+ }
 
     h1 {
         font-size: 150%;
@@ -516,27 +557,45 @@ footer {
         width: 50%;
     }
     .h3hed{
-        width: 50%;
+        width: 55%;
     }
     h2{ 
         font-size: 250%;
     }
     h3{
-        font-size: 140%;
+        font-size: 135%;
     }
     .desc {
-        font-size: 60%;
+        font-size: 100%;
      
     }
+    
     .content {
         flex-direction: column;
     }
-    .left-content,
+    .left-content {
+        width: 50%;
+    }
     .right-content {
-        width: 100%;
+        width: 50%;
+    }
+
+    .feattextL,
+    .feattextR {
+        font-size: 15pt;
+    }
+
+    .featimg {
+        height: 300px;
+        width: 330px;
+    }
+    #featurecontent {
+        padding-bottom: 13%;
     }
     .contactcontainer {
         width: 90%;
+        margin-right: 30%;
+        margin-left: 5%;
     }
     #logofooter {
         width: 45px;
