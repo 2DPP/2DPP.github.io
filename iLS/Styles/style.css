@@ -460,46 +460,30 @@ footer {
     #logofooter {
         width: 45px;
     }
-    #footerh1{
+    #footerh1, #copyright {
         font-size: 13pt;
+        margin: auto;
     }
-    #copyright{
-        font-size: 13pt;
-        margin:auto;
-    }
-    #fb,
-    #x,
-    #ig {
+    #fb, #x, #ig {
         width: 50px;
         height: 50px;
-        margin: 5px; 
-        transition: transform 0.5s ease; 
-       
+        margin: 5px;
+        transition: transform 0.5s ease;
     }
 }
 
 /* Media Query for mobile phones */
 @media only screen and (max-width: 768px) {
-    #header {
+    #header, .logo-container, nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 5px;
     }
 
-    .logo-container {
-        display: flex;
-        align-items: center;
-    }
-
     h1 {
         font-size: 150%;
-        margin-left: 10px; 
-    }
-
-    nav {
-        display: flex;
-        align-items: center;
+        margin-left: 10px;
     }
 
     nav ul {
@@ -511,28 +495,26 @@ footer {
     nav li {
         margin: 0 10px;
     }
-    #homebg{
+    #homebg {
         height: 180px;
         width: 50%;
     }
-    .h3hed{
+    .h3hed {
         width: 50%;
     }
-    h2{ 
+    h2 {
         font-size: 250%;
     }
-    h3{
+    h3 {
         font-size: 140%;
     }
     .desc {
         font-size: 60%;
-     
     }
     .content {
         flex-direction: column;
     }
-    .left-content,
-    .right-content {
+    .left-content, .right-content {
         width: 100%;
     }
     .contactcontainer {
@@ -541,46 +523,30 @@ footer {
     #logofooter {
         width: 45px;
     }
-    #footerh1{
+    #footerh1, #copyright {
         font-size: 13pt;
+        margin: auto;
     }
-    #copyright{
-        font-size: 13pt;
-        margin:auto;
-    }
-    #fb,
-    #x,
-    #ig {
+    #fb, #x, #ig {
         width: 45px;
         height: 45px;
-        margin: 5px; 
-        transition: transform 0.5s ease; 
-       
+        margin: 5px;
+        transition: transform 0.5s ease;
     }
 }
 
 /* Media Query for smaller mobile phones */
 @media only screen and (max-width: 480px) {
-    #header {
+    #header, .logo-container, nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 5px;
     }
 
-    .logo-container {
-        display: flex;
-        align-items: center;
-    }
-
     h1 {
         font-size: 120%;
-        margin-left: 10px; 
-    }
-
-    nav {
-        display: flex;
-        align-items: center;
+        margin-left: 10px;
     }
 
     nav ul {
@@ -589,7 +555,7 @@ footer {
         padding: 0;
         margin: 0;
     }
-    #homebg{
+    #homebg {
         height: 130px;
         width: 50%;
     }
@@ -599,13 +565,13 @@ footer {
     nav li {
         margin-right: 5px;
     }
-    .h3hed{
+    .h3hed {
         width: 60%;
     }
-    h2{ 
+    h2 {
         font-size: 250%;
     }
-    h3{
+    h3 {
         font-size: 140%;
     }
     .desc {
@@ -614,33 +580,26 @@ footer {
     .content {
         flex-direction: column;
     }
-
-    .left-content,
-    .right-content {
+    .left-content, .right-content {
         width: 100%;
     }
-
     .contactcontainer {
         width: 80%;
     }
     #logofooter {
         width: 25px;
     }
-    #footerh1{
+    #footerh1 {
         font-size: 8pt;
     }
-    #copyright{
+    #copyright {
         font-size: 7pt;
-        margin:auto;
+        margin: auto;
     }
-    #fb,
-#x,
-#ig {
-    width: 20px;
-    height: 30px;
-    margin: 3px; 
-    transition: transform 0.5s ease; 
-   
+    #fb, #x, #ig {
+        width: 20px;
+        height: 30px;
+        margin: 3px;
+        transition: transform 0.5s ease;
+    }
 }
-}
-
