@@ -258,7 +258,7 @@ h3 {
     width: 430px;
     font-size: 20pt;
     margin-left: auto;
-    margin-right: 15px;
+ 
 
 
 }
@@ -655,6 +655,14 @@ footer {
     #intro {
         margin-bottom: 15px;
     }
+     #heroimg{
+       width: 50%;
+       height: 35%;
+     }
+     #herop{
+        font-size: 25pt;
+        margin-left: -15%;
+     }
     nav li {
         margin-right: 5px;
     }
@@ -662,7 +670,7 @@ footer {
         width: 60%;
     }
     h2{ 
-        font-size: 250%;
+        font-size: 200%;
     }
     h3{
         font-size: 140%;
@@ -673,7 +681,39 @@ footer {
     .content {
         flex-direction: column;
     }
+    .h4containerL {
+        align-items: center;
+        margin: 0; 
+    }
+    .h4containerR {
+        align-items: center;
+        margin: 0;
+        padding: 30px;
+        margin-right: 0;
+        margin-left: -3%;
+    
+    }
+    .featimgcontainer {
+        display: flex;
+        flex-flow: column;
+    }
+    .featimg {
+        margin: auto;
+    }
+    .featimagecontainer
+    .feattextR {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
+    .feattextR {
+        flex: auto;
+        margin: 8%;
+    }
+    .feattextL {
+      flex:auto;
+      margin: 8%;
+    }
     .left-content,
     .right-content {
         width: 100%;
@@ -681,6 +721,9 @@ footer {
 
     .contactcontainer {
         width: 80%;
+        margin: auto;
+        margin-top:5%;
+        margin-bottom:5%;
     }
     #logofooter {
         width: 25px;
@@ -692,14 +735,13 @@ footer {
         font-size: 7pt;
         margin:auto;
     }
-    #fb,
-#x,
-#ig {
+    #fb, #x, #ig   {
     width: 20px;
     height: 30px;
     margin: 3px; 
     transition: transform 0.5s ease; 
    
 }
+
 }
 
