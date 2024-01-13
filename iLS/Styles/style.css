@@ -149,7 +149,10 @@ h2 {
 #download {
     margin-top: 15px;
 }
-
+#downloadbg:hover{
+    fill: #9B59B6;
+    
+}
 /* Slant effect styling */
 #slant {
     width: 100%;
