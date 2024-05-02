@@ -1,0 +1,759 @@
+/* Resetting CSS to remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+    background-color: #3498DB;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header styling */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    opacity: 80%;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+/* Logo styling */
+#logo {
+    width: 15%;
+    height: auto;
+    
+}
+
+h1 {
+    margin: 0; 
+    font-size: 180%;
+   
+}
+
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-weight: bold;
+}
+
+/* Underline animation for contact and about */
+#about-link::before,
+#contact-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    background-color: #000000; 
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; 
+}
+
+#about-link:hover::before,
+#contact-link:hover::before {
+    width: 100%;
+}
+
+/* Home background styling */
+#homebg {
+    width: 100%;
+    height: 100px;
+    background-color: #3498DB;
+}
+
+/* Introduction section styling */
+#intro {
+   
+    padding: 5%;
+    
+    width: 100%;
+    background-color: #3498DB;
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+#hero-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+
+#heroimg {
+    height: 350px;
+    width: 500px;
+    margin-right: 10px; 
+    margin-left: -30px;
+   
+}
+
+#herop {
+    color: white;
+    font-size: 50pt;
+    font-family: 'Roboto', sans-serif;
+    margin-left: -150px; /* Adjusted margin to bring #herop closer */
+    color: #000000;
+    font-weight: bold;
+    text-align: start;
+    
+}
+
+h2 {
+    color: white;
+    font-size: 230%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#download {
+    margin-top: 15px;
+}
+#downloadbg:hover{
+    fill: #e6e6e6;
+    
+}
+/* Slant effect styling */
+#slant {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 5%;
+    clip-path: polygon(0 0, 0% 0, 100% 100%, 0 100%);
+    z-index: -1;
+    margin-bottom: -1px; 
+}
+
+
+#sep {
+    background-color: white;
+    height: 100%;
+}
+
+/* Information section styling */
+#info {
+    background-color: white;
+    height: 800%;
+   
+}
+
+/* Heading styling */
+.h3hed {
+    background-color: #3498DB;
+    border-radius: 0% 25px 25px 0%;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    color: #ffffff;
+    
+}
+
+h3 {
+    font-size: 250%;
+}
+
+/* Container styling */
+.container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+    width: 80%;
+  
+}
+.container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content {
+    display: flex;
+}
+
+.left-content {
+    width: 50%; 
+}
+
+
+.right-content {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+/* Description styling */
+.desc {
+    font-weight: bold;
+    font-size: 150%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    margin-left: 1%;
+}
+
+
+#features {
+    text-align: center;
+    padding: 3%;
+}
+#featurecontent{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 20%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.h4containerL {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 5%;
+    width: 400px;
+    font-size: 20pt;
+    margin-left: 25px;
+}
+.h4containerR {
+    background-color: white;
+    padding: 35px;
+    text-align: center;
+    margin-top: 5%;
+    width: 430px;
+    font-size: 20pt;
+    margin-left: auto;
+ 
+
+
+}
+.featimgcontainer {
+ display: flex;
+}
+
+.featimg {
+    width: 45%;
+    height: 30%;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid black;
+    box-shadow: 30 30 15px 1px black;
+
+}
+
+.feattextR{
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 20pt;
+}
+
+.feattextL{
+    margin-left: 45px;
+    margin-right: 25px;
+    font-size: 20pt;
+}
+h4 {
+    border-radius: 25px;
+    background: #3498DB;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#contacthead {
+    padding: 3%;
+    text-align: center;
+}
+#contactbg {
+    background-color: white;
+    padding: 5%;
+}
+/* Contact form container styling */
+.contactcontainer {
+    background-color: rgb(43, 98, 180);
+    padding: 5%;
+    border: 3px black solid;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px 3px black;
+}
+
+/* Form styling */
+form {
+    padding: 5%;
+  
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #9B59B6;
+    color: white;
+    padding: 12px 20px;
+    border: 3px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: orange;
+}
+
+/* Hover effect for input and textarea */
+input:hover,
+textarea:hover {
+    background-color: #bcd0fd;
+}
+
+/* Footer styling */
+footer {
+    
+    background-color: #00BFFF;
+    display: flex;
+    justify-content:center;
+    font-family: 'Open Sans', sans-serif;
+
+   
+}
+#footer-content {
+    display: flex;
+    align-items: center;
+}
+
+#logocontainer {
+    width: 30%;
+}
+/* Logo styling in footer */
+#logofooter {
+    width: 15%;
+    margin-left: 5%;
+    
+
+}
+
+/* Footer heading styling */
+#footerh1 {
+    font-size: 130%;
+    color: white;
+    margin: 0;
+}
+
+
+#copyrightcontainer {
+    flex: 1;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+/* Copyright text styling */
+#copyright {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+#icons {
+    margin-right: 5%;
+}
+/* SVG icons styling */
+#fb,
+#x,
+#ig {
+    width: 50px;
+    height: 50px;
+    margin: 10px; 
+    transition: transform 0.5s ease; 
+   
+}
+
+/*  keyframe animation  infinite flipping,  color brightness change */
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+        filter: brightness(1);
+    }
+    50% {
+        transform: rotateY(180deg);
+        filter: brightness(2); 
+    }
+    100% {
+        transform: rotateY(360deg);
+        filter: brightness(1);
+    }
+}
+
+#fb:hover,
+#x:hover,
+#ig:hover {
+    animation: flip 2s infinite linear;
+    transform-origin: center;
+    fill: #9B59B6;
+}
+#icons a {
+    text-decoration: none;
+}
+
+/* Media Query for wider screens*/
+@media only screen and (max-width: 1024px) {
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    h1 {
+        font-size: 150%;
+    }
+    nav li {
+        margin-left: auto;
+        margin-right: 50px;
+    }
+    
+    #logofooter {
+        width: 45px;
+    }
+    #footerh1{
+        font-size: 13pt;
+    }
+    #copyright{
+        font-size: 13pt;
+        margin:auto;
+    }
+    #fb,
+    #x,
+    #ig {
+        width: 50px;
+        height: 50px;
+        margin: 5px; 
+        transition: transform 0.5s ease; 
+       
+    }
+}
+
+/* Media Query for mobile phones */
+@media only screen and (max-width: 768px) {
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    #hero-container {
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        margin-bottom: 20px; 
+    }
+    
+    #heroimg {
+        height: 300px;
+        width: 450px;
+        margin-right: 10px; 
+        margin-left: -40px;
+       
+    }
+    
+    #herop {
+        color: white;
+        font-size: 50pt;
+        font-family: 'Roboto', sans-serif;
+        margin-left: -130px; 
+        color: #000000;
+        font-weight: bold;
+        text-align: start;
+        
+    }
+    
+    h2 {
+        color: white;
+        font-size: 200%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    #download {
+        margin-top: 15px;
+        width: 250px;
+        height: 150px;
+    }
+ #slant {
+    height: 120px;
+ }
+
+    h1 {
+        font-size: 150%;
+        margin-left: 10px; 
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav li {
+        margin: 0 10px;
+    }
+    #homebg{
+        height: 180px;
+        width: 50%;
+    }
+    .h3hed{
+        width: 55%;
+    }
+    h2{ 
+        font-size: 250%;
+    }
+    h3{
+        font-size: 135%;
+    }
+    .desc {
+        font-size: 100%;
+     
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+    .left-content {
+        width: 50%;
+    }
+    .right-content {
+        width: 50%;
+    }
+
+    .feattextL,
+    .feattextR {
+        font-size: 15pt;
+        margin: 5px;
+    }
+
+    .featimg {
+        height: 300px;
+        width: 330px;
+    }
+    #featurecontent {
+        padding-bottom: 13%;
+    }
+    .contactcontainer {
+        width: 90%;
+        margin-right: 30%;
+        margin-left: 5%;
+    }
+    #logofooter {
+        width: 45px;
+    }
+    #footerh1{
+        font-size: 13pt;
+    }
+    #copyright{
+        font-size: 13pt;
+        margin:auto;
+    }
+    #fb,
+    #x,
+    #ig {
+        width: 45px;
+        height: 45px;
+        margin: 5px; 
+        transition: transform 0.5s ease; 
+       
+    }
+}
+
+/* Media Query for smaller mobile phones */
+@media only screen and (max-width: 480px) {
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 120%;
+        margin-left: 10px; 
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #homebg{
+        height: 130px;
+        width: 50%;
+    }
+    #intro {
+        margin-bottom: 15px;
+    }
+     #heroimg{
+       width: 50%;
+       height: 35%;
+     }
+     #herop{
+        font-size: 25pt;
+        margin-left: -15%;
+     }
+    nav li {
+        margin-right: 5px;
+    }
+    .h3hed{
+        width: 60%;
+    }
+    h2{ 
+        font-size: 200%;
+    }
+    h3{
+        font-size: 140%;
+    }
+    .desc {
+        font-size: 80%;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .h4containerL {
+        align-items: center;
+        margin: 0; 
+    }
+    .h4containerR {
+        align-items: center;
+        margin: 0;
+        padding: 30px;
+        margin-right: 0;
+        margin-left: -3%;
+    
+    }
+    .featimgcontainer {
+        display: flex;
+        flex-flow: column;
+    }
+    .featimg {
+        margin: auto;
+    }
+    .featimagecontainer
+    .feattextR {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .feattextR {
+        flex: auto;
+        margin: 8%;
+    }
+    .feattextL {
+      flex:auto;
+      margin: 8%;
+    }
+    .left-content,
+    .right-content {
+        width: 100%;
+    }
+
+    .contactcontainer {
+        width: 80%;
+        margin: auto;
+        margin-top:5%;
+        margin-bottom:5%;
+    }
+    #logofooter {
+        width: 25px;
+    }
+    #footerh1{
+        font-size: 8pt;
+    }
+    #copyright{
+        font-size: 7pt;
+        margin:auto;
+    }
+    #fb, #x, #ig   {
+    width: 20px;
+    height: 30px;
+    margin: 3px; 
+    transition: transform 0.5s ease; 
+   
+}
+
+}
+
