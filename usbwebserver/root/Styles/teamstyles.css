@@ -58,6 +58,7 @@ body {
     }
     
     .aimg {
+      background-color: #a5c4d6;
       width: 180%;
       height: 200%;
       max-height: 70%; /* Limit the maximum height */
@@ -175,7 +176,7 @@ p {
   }
 /* profile image here */
   .pimage {
-  
+    background-color: #a5c4d6;
     border: 3px solid #9B59B6;
     width: 55%; 
     height: 60%; 

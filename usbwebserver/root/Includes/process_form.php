@@ -1,16 +1,16 @@
 <?php
-// Enable error reporting
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 include "dbconnect.php";
 
-// Check if form data exists
+//  form data validator
 if(isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['message'])) {
     // Prepare SQL statement to insert data into the database
     $stmt = $conn->prepare("INSERT INTO contacts (firstname, lastname, email, message) VALUES (?, ?, ?, ?)");
 
-    // Bind parameters
+    
     $stmt->bind_param("ssss", $firstname, $lastname, $email, $message);
 
     // Get form data
@@ -19,7 +19,7 @@ if(isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['messa
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    // Execute SQL statement
+    // Execute SQL statement if succesful or not
     if ($stmt->execute()) {
         echo "Form submitted successfully!";
         // Output JavaScript to redirect to previous page
