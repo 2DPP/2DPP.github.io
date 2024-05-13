@@ -243,7 +243,7 @@ h3 {
 
 /* Description styling */
 .desc {
-   
+    
     font-size: 150%;
     margin-top: 3%;
     margin-bottom: 10%;
@@ -367,7 +367,7 @@ textarea {
 
 /* Submit button styling */
 input[type="submit"] {
-    background-color: #9B59B6;
+    background-color: #132f7d;
     color: white;
     padding: 12px 20px;
     border: 3px solid black;
@@ -377,7 +377,7 @@ input[type="submit"] {
 
 /* Hover effect for submit button */
 input[type="submit"]:hover {
-    background-color: #4d2c5a;
+    background-color: #5a66cb;
 }
 
 /* Hover effect for input and textarea */
@@ -610,6 +610,9 @@ footer {
     .right-content {
         width: 50%;
     }
+    .right-content img {
+        visibility: visible;
+    }
 
     .feattextL,
     .feattextR {
@@ -654,7 +657,7 @@ footer {
 }
 
 /* Media Query for smaller mobile phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     #header {
         display: flex;
         align-items: center;
@@ -784,8 +787,12 @@ footer {
 @media only screen and (max-width: 400px) { 
  .h4containerR {
 
-    margin-left: -5%;
+width: 100%;
  }
+ .h4containerL {
+   
+    width: 100%;
+     }
  nav li {
   
     margin-right: 25px;
@@ -793,7 +800,12 @@ footer {
 #header{
     width: 100%;
 }
+.featimg {
+    width: 90%;
+    margin: 10px;
+}
 .spinning-image img {
     visibility: hidden !important;; 
 }
+
 }
