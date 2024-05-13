@@ -787,8 +787,12 @@ footer {
 @media only screen and (max-width: 400px) { 
  .h4containerR {
 
-    margin-left: -5%;
+width: 100%;
  }
+ .h4containerL {
+   
+    width: 100%;
+     }
  nav li {
   
     margin-right: 25px;
@@ -796,7 +800,12 @@ footer {
 #header{
     width: 100%;
 }
+.featimg {
+    width: 90%;
+    margin: 10px;
+}
 .spinning-image img {
     visibility: hidden !important;; 
 }
+
 }
