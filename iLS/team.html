@@ -5,45 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles\teamstyle.css">
     <link rel="icon" type="image/x-icon" href="Images\Logo.png">
-    <title>The ProblemPal Team</title>
+   <title>The ProblemPal Team</title>
 </head>
 <body>
+<?php 
 
+include "Includes\dbconnect.php";
+
+
+?>
         
     </div>
     <div id= "header1">
-        <h1 id="meet">MEET THE TEAM:</h1>
+        <h1 id="meet">MEET THE TEAM:</h1> 
     </div>
     <!-- everything about profiles are here-->
     <!-- if a href=""  is triggered, the webpage is scrolled unto the value of a href,
-    in which as you can see, i used it to select p's with ids that were specified 
+    in which as you can see, I used it to select p's with ids that were specified 
     to each member  -->
     <div id="profilesnav">
         <div class="profiles">
-            <a href="#nathan"><img class="aimg" src="Images\Bucoy.jpg"></a>
+            <a href="#nathan"><img alt="Member"class="aimg" src="Images\Bucoy.png"></a>
             <h2> Bucoy, <br> Nathan Xander </h2>
         </div>
 
         <div class="profiles">
-            <a href="#catubag"><img class="aimg" src="Images\Catubag.jpg"></a>
+            <a href="#catubag"><img alt="Member" class="aimg" src="Images\Catubag.png"></a>
             <h2> Catubag,<br>JohnMark </h2>
             </div>
 
         <div class="profiles">
-            <a href="#riosa"><img class="aimg" src="Images\Riosa.jpg"></a>
+            <a href="#riosa"><img  alt="Member" class="aimg" src="Images\Riosa.png"></a>
             <h2> Riosa, <br>John Coddy </h2>
             </div>
 
         <div class="profiles">
-            <a href="#renalyn"><img class="aimg" src="Images\Bautista.jpg"></a>
+            <a href="#renalyn"><img alt="Member"  class="aimg" src="Images\Bautista.png"></a>
             <h2> Bautista,<br> Renalyn Rose </h2>
         </div>
 
         <div class="profiles">
-            <a href="#raniel"><img class="aimg" src="Images\Ballesteros.jpg"></a>
+            <a href="#raniel"><img  alt="Member" class="aimg" id="raniel" src="Images\Ballesteros (3).png"></a>
             <h2> Ballesteros,<br>Raniel </h2>
         </div>
 
+        <div class="profiles">
+            <a href="#Guia"><img alt="Member" class="aimg" id="guia" src="Images\Guia.png"></a>
+            <h2> Tuazon,<br>Guia</h2>
+        </div>
     </div>
 
 
@@ -54,7 +63,7 @@
     </div>
     <p>
         <br><br><br>
-        We are Group 7. IT students from IT - 212 of STI College Las Pinas. 
+        We are Group 6. IT students from IT - 212 of STI College Las Pinas. 
         <br><br><br><br><br><br><br>
         S.Y 2023-2024 
        
@@ -68,7 +77,7 @@
         <div class="profilename"> <h2 class="pfname"> Nathan Xander Bucoy </h2></div>
         <div class="container">
         <div class="profileinfo">
-            <img class="pimage" src="Images\Bucoy.jpg">
+            <img alt="Member" class="pimage" src="Images\Bucoy.png">
             <p class="skills">
                 Skills:<br><br>
                 Problem Solving <br>
@@ -94,7 +103,7 @@
         <div class="profilename"> <h2 class="pfname"> JohnMark Catubag </h2></div>
         <div class="container">
         <div class="profileinfo">
-            <img class="pimage" src="Images\Catubag.jpg">
+            <img alt="Member" id="catubagpfp" class="pimage" src="Images\Catubag.png">
             <p class="skills">
                 Skills:<br><br>
                 Time management <br>
@@ -119,7 +128,7 @@
             <div class="profilename"> <h2 class="pfname"> John Coddy Riosa </h2></div>
             <div class="container">
             <div class="profileinfo">
-                <img class="pimage" src="Images\Riosa.jpg">
+                <img alt="Member" class="pimage" src="Images\Riosa.png">
                 <p class="skills">
                     Skills:<br><br>
                    Linguistics,<br>
@@ -147,7 +156,7 @@
                 <div class="profilename"> <h2 class="pfname"> Renalyn Rose Bautista </h2></div>
                 <div class="container">
                 <div class="profileinfo">
-                    <img class="pimage" src="Images\Bautista.jpg">
+                    <img alt="Member" class="pimage" src="Images\Bautista.png">
                     <p class="skills">
                         Skills:<br><br>
                         Basics on coding<br>
@@ -172,7 +181,7 @@
                     <div class="profilename"> <h2 class="pfname"> Raniel Ballesteros</h2></div>
                     <div class="container">
                     <div class="profileinfo">
-                        <img class="pimage" src="Images\Ballesteros.jpg">
+                        <img alt="Member" class="pimage"  src="Images\Ballesteros (3).png">
                         <p class="skills">
                             Skills:<br><br>
                             Time Management,<br>
@@ -191,35 +200,61 @@
                         </div>
                         
                     </div>
+                    <div class="seperator"> <p id="Guia"></p></div>
+                    <div class="profilebody">
+                        <div class="profilename"> <h2 class="pfname"> Guia Tuazon</h2></div>
+                        <div class="container">
+                        <div class="profileinfo">
+                            <img alt="Member" class="pimage" src="Images\Guia.png">
+                            <p class="skills">
+                                Skills:<br><br>
+                                Communication,<br>
+                                Emotional Intelligence<br>
+                                
+                                </p>
+                              
+                                </div>
+                                <div class="motto"> <p class="mottotext">
+                
+                                    "Success is the sum of small efforts, repeated day in and day out." <br><br>
+                                    I am a passionate learner, dedicated to self-improvement and growth. <br>
+                                   
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
                     <input type="checkbox" id="menu-toggle" style="display: none;">
 
                     <div id="vertical-menu">
-                      <div class="sub-menu">
-                        <button class="menu-button">
-                          <!-- home button -->
-                         <a href ="index.html"> <svg id="home" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#9B59B6"/>
-                            <path d="M16 31.7416L42 10H42.52L68 31.7416V32.7528H59.68V55H48.24V41.3483L47.2 39.8315H36.8L35.24 41.3483V55H24.32V32.7528H16V31.7416Z" fill="white" stroke="white"/>
-                          </svg></a>
-                        </button>
+                        <div class="sub-menu">
+                            <button class="menu-button">
+                                <!-- home button -->
+                                <a href="index.html">
+                                    <svg id="home" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#192bd2"/>
+                                        <path d="M16 31.7416L42 10H42.52L68 31.7416V32.7528H59.68V55H48.24V41.3483L47.2 39.8315H36.8L35.24 41.3483V55H24.32V32.7528H16V31.7416Z" fill="white" stroke="white"/>
+                                    </svg>
+                                </a>
+                            </button>
                         
-                        <button class="menu-button">
-                         <!-- scroll to top button-->
-                          <svg id="scrollbtn" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#9B59B6"/>
-                            <path d="M42.7113 9L22.4227 31.08L22 31.54H33.8351V55H51.1649V31.54H63L42.7113 9Z" fill="white" stroke="white"/>
-                          </svg>
-                        </button>
-                      </div>
-                  
-                      <label for="menu-toggle" class="menu-button">
-                        <!-- main button -->
-                        <svg id ="menubtn" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#9B59B6"/>
-                          <path d="M36 13V29H20V41.5H36V57.5H48.5V41.5H64.5V29H48.5V13H36Z" fill="white" stroke="white"/>
-                        </svg>
-                  
-                      </label>
+                            <button class="menu-button">
+                                <!-- scroll to top button-->
+                                <svg id="scrollbtn" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#192bd2"/>
+                                    <path d="M42.7113 9L22.4227 31.08L22 31.54H33.8351V55H51.1649V31.54H63L42.7113 9Z" fill="white" stroke="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <label for="menu-toggle" class="menu-button">
+                            <!-- main button -->
+                            <svg id="menubtn" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#192bd2"/>
+                                <path d="M36 13V29H20V41.5H36V57.5H48.5V41.5H64.5V29H48.5V13H36Z" fill="white" stroke="white"/>
+                            </svg>
+                        </label>
+                        
                     </div>
                     <footer>
                         <p> Copyright © 2023 ProblemPal. All Rights Reserved.</p>
