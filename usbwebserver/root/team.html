@@ -45,12 +45,12 @@ include "Includes\dbconnect.php";
         </div>
 
         <div class="profiles">
-            <a href="#raniel"><img  alt="Member" class="aimg" src="Images\Ballesteros.png"></a>
+            <a href="#raniel"><img  alt="Member" class="aimg" id="raniel" src="Images\Ballesteros (3).png"></a>
             <h2> Ballesteros,<br>Raniel </h2>
         </div>
 
         <div class="profiles">
-            <a href="#Guia"><img alt="Member" class="aimg" src="Images\Guia.png"></a>
+            <a href="#Guia"><img alt="Member" class="aimg" id="guia" src="Images\Guia.png"></a>
             <h2> Tuazon,<br>Guia</h2>
         </div>
     </div>
@@ -63,7 +63,7 @@ include "Includes\dbconnect.php";
     </div>
     <p>
         <br><br><br>
-        We are Group 7. IT students from IT - 212 of STI College Las Pinas. 
+        We are Group 6. IT students from IT - 212 of STI College Las Pinas. 
         <br><br><br><br><br><br><br>
         S.Y 2023-2024 
        
@@ -181,7 +181,7 @@ include "Includes\dbconnect.php";
                     <div class="profilename"> <h2 class="pfname"> Raniel Ballesteros</h2></div>
                     <div class="container">
                     <div class="profileinfo">
-                        <img alt="Member" class="pimage" src="Images\Ballesteros.png">
+                        <img alt="Member" class="pimage"  src="Images\Ballesteros (3).png">
                         <p class="skills">
                             Skills:<br><br>
                             Time Management,<br>
@@ -227,32 +227,34 @@ include "Includes\dbconnect.php";
                     <input type="checkbox" id="menu-toggle" style="display: none;">
 
                     <div id="vertical-menu">
-                      <div class="sub-menu">
-                        <button class="menu-button">
-                          <!-- home button -->
-                         <a href ="index.html"> <svg id="home" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#9B59B6"/>
-                            <path d="M16 31.7416L42 10H42.52L68 31.7416V32.7528H59.68V55H48.24V41.3483L47.2 39.8315H36.8L35.24 41.3483V55H24.32V32.7528H16V31.7416Z" fill="white" stroke="white"/>
-                          </svg></a>
-                        </button>
+                        <div class="sub-menu">
+                            <button class="menu-button">
+                                <!-- home button -->
+                                <a href="index.html">
+                                    <svg id="home" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#192bd2"/>
+                                        <path d="M16 31.7416L42 10H42.52L68 31.7416V32.7528H59.68V55H48.24V41.3483L47.2 39.8315H36.8L35.24 41.3483V55H24.32V32.7528H16V31.7416Z" fill="white" stroke="white"/>
+                                    </svg>
+                                </a>
+                            </button>
                         
-                        <button class="menu-button">
-                         <!-- scroll to top button-->
-                          <svg id="scrollbtn" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#9B59B6"/>
-                            <path d="M42.7113 9L22.4227 31.08L22 31.54H33.8351V55H51.1649V31.54H63L42.7113 9Z" fill="white" stroke="white"/>
-                          </svg>
-                        </button>
-                      </div>
-                  
-                      <label for="menu-toggle" class="menu-button">
-                        <!-- main button -->
-                        <svg id ="menubtn" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#9B59B6"/>
-                          <path d="M36 13V29H20V41.5H36V57.5H48.5V41.5H64.5V29H48.5V13H36Z" fill="white" stroke="white"/>
-                        </svg>
-                  
-                      </label>
+                            <button class="menu-button">
+                                <!-- scroll to top button-->
+                                <svg id="scrollbtn" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#192bd2"/>
+                                    <path d="M42.7113 9L22.4227 31.08L22 31.54H33.8351V55H51.1649V31.54H63L42.7113 9Z" fill="white" stroke="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <label for="menu-toggle" class="menu-button">
+                            <!-- main button -->
+                            <svg id="menubtn" width="40" height="40" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="42" cy="35.5" rx="42" ry="35.5" fill="#192bd2"/>
+                                <path d="M36 13V29H20V41.5H36V57.5H48.5V41.5H64.5V29H48.5V13H36Z" fill="white" stroke="white"/>
+                            </svg>
+                        </label>
+                        
                     </div>
                     <footer>
                         <p> Copyright © 2023 ProblemPal. All Rights Reserved.</p>
