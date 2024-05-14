@@ -209,7 +209,18 @@
         </div>
         </div>
     </footer>
-    <script>
+     <script>
+        // Open the modal
+function openModal() {
+  document.getElementById('myModal').style.display = 'block';
+}
+
+// Close the modal
+function closeModal() {
+  document.getElementById('myModal').style.display = 'none';
+}
+
+
     document.addEventListener("DOMContentLoaded", function () {
         var containers = document.querySelectorAll('.container');
 
@@ -286,14 +297,13 @@
                 .then(data => {
                     // Handle the response from the server
                     console.log(data);
-                    // Optionally, you can display a success message or update the UI
+                    
                 })
                 .catch(error => {
                     console.error('There was a problem with the fetch operation:', error);
-                    // Optionally, you can display an error message or update the UI
+                   
                 });
             }
         });
     });
 </script>
-
