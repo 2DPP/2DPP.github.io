@@ -535,7 +535,7 @@ footer {
 #ig:hover {
     animation: flip 2s infinite linear;
     transform-origin: center;
-    fill: #9B59B6;
+    fill: #0b5fa3;
 }
 #icons a {
     text-decoration: none;
