@@ -368,12 +368,14 @@ h3 {
 }
 
 .feattextR{
+    font-family:  "Shadows Into Light", cursive;
     margin-right: 25px;
     margin-left: 25px;
     font-size: 20pt;
 }
 
 .feattextL{
+    font-family:  "Shadows Into Light", cursive;
     margin-left: 45px;
     margin-right: 25px;
     font-size: 20pt;
