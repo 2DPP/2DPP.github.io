@@ -291,6 +291,7 @@ h3 {
     height: 100px; 
     margin-right: 120px; 
     perspective: 1000px; 
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.763)); 
 }
 
 .spinning-image img {
