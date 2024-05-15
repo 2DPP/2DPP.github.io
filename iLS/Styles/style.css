@@ -17,8 +17,6 @@ html {
 body {
     background-color: #3498DB;
     font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased; 
-    -moz-osx-font-smoothing: grayscale; 
 }
 
 /* Header styling */
@@ -306,6 +304,7 @@ h3 {
     transform-origin: center center; 
 }
 
+
 @keyframes spin-horizontal {
     0% { transform: rotateY(0deg); }
     100% { transform: rotateY(360deg); }
@@ -313,7 +312,7 @@ h3 {
 
 /* Description styling */
 .desc {
-    font-family:  "Shadows Into Light", cursive;
+    font-family:  "Kalam", sans-serif;
     font-size: 150%;
     margin-top: 3%;
     margin-bottom: 10%;
@@ -370,17 +369,17 @@ h3 {
 }
 
 .feattextR{
-    font-family:  "Shadows Into Light", cursive;
     margin-right: 25px;
     margin-left: 25px;
     font-size: 20pt;
+    font-family:  "Kalam", sans-serif;
 }
 
 .feattextL{
-    font-family:  "Shadows Into Light", cursive;
     margin-left: 45px;
     margin-right: 25px;
     font-size: 20pt;
+    font-family:  "Kalam", sans-serif;
 }
 h4 {
     border-radius: 25px;
