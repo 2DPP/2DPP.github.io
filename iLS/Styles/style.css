@@ -17,6 +17,8 @@ html {
 body {
     background-color: #3498DB;
     font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
 }
 
 /* Header styling */
