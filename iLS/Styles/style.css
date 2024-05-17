@@ -148,6 +148,8 @@ h2 {
 
 #download {
     margin-top: 15px;
+    width: 250px;
+        height: 150px;
 }
 #downloadbg:hover{
     fill: #e6e6e6;
@@ -628,8 +630,8 @@ footer {
     
     #download {
         margin-top: 15px;
-        width: 250px;
-        height: 150px;
+        width: 230px;
+        height: 100px;
     }
  #slant {
     height: 120px;
