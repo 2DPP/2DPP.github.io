@@ -18,6 +18,16 @@ body {
     background-color: #3498DB;
     font-family: 'Roboto', sans-serif;
 }
+body.terms-accepted > :not(#termsOfServiceContainer):not(.modal) {
+    display: block !important;
+}
+
+body:not(.terms-accepted) > :not(#termsOfServiceContainer):not(.modal) {
+    display: none !important;
+}
+.button-container {
+    text-align: center;
+}
 
 /* Header styling */
 #header {
@@ -34,11 +44,14 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
+    width: 65%;
+    height: 70px;
 }
 /* Logo styling */
 #logo {
-    width: 15%;
-    height: auto;
+    width: 10%;
+    height: 60px;
+    margin-left: -3%;
     
 }
 
@@ -47,7 +60,10 @@ h1 {
     font-size: 180%;
    
 }
-
+#ph1 {
+    margin-left: -3%;
+    font-size: 180%;
+}
 
 /* Navigation styling */
 nav {
@@ -62,9 +78,11 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-top:-60px;
 }
 
 nav li {
+  
     margin: 0 15px;
 }
 
@@ -404,13 +422,12 @@ h4 {
 .contactcontainer {
     background-color: rgb(43, 98, 180);
     padding: 5%;
-    border: 3px black solid;
     width: 80%;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
     border-radius: 25px;
-    box-shadow: 1px 1px 5px 3px black;
+    box-shadow: 0px 0px 25px 5px black;
 }
 
 /* Form styling */
@@ -461,6 +478,55 @@ textarea:hover {
     background-color: #bcd0fd;
 }
 
+#termsOfServiceContainer{
+    margin: auto;
+    padding: 50px;
+    width: 80%;
+    box-shadow: 0px 0px 25px 5px;
+    border-radius: 25px;
+    background-color: #012f7f;
+}
+#termsOfServiceContainer h3 {
+  font-size: 20pt;
+  color: rgb(44, 146, 255);
+}
+#termsOfServiceContainer h2 {
+    text-align: center;
+    color: rgb(44, 146, 255);
+}
+#termsOfServiceContainer button{ 
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 15px;
+}
+#termsOfServiceContainer p, li {
+    color: white;
+}
+#termsOfServiceContainer a {
+    color: hsl(179, 100%, 50%);
+    font-weight: bold;
+}
+#termsOfServiceContainer a:hover {
+    color: hsl(221, 100%, 79%);
+    font-weight: bold;
+}
+#acceptButton {
+    background-color: rgb(36, 170, 242);
+    color:white;
+}
+#rejectButton {
+    background-color: rgb(8, 33, 50);
+    color:white;
+}
+#acceptButton:hover {
+    color:white;
+    transform: scale(1.1);
+}
+#rejectButton:hover {
+    color:white;
+    transform: scale(1.1);
+}
 /* Footer styling */
 footer {
     
@@ -477,14 +543,13 @@ footer {
 }
 
 #logocontainer {
-    width: 30%;
+    width: 10%;
 }
 /* Logo styling in footer */
 #logofooter {
-    width: 15%;
+    width: 25%;
+    height: 30px;
     margin-left: 5%;
-    
-
 }
 
 /* Footer heading styling */
@@ -493,7 +558,6 @@ footer {
     color: white;
     margin: 0;
 }
-
 
 #copyrightcontainer {
     flex: 1;
@@ -508,7 +572,8 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 #icons {
-    margin-right: 5%;
+    width: 170px;
+    margin:auto;
 }
 /* SVG icons styling */
 #fb,
@@ -604,6 +669,12 @@ footer {
         justify-content: center; 
         margin-bottom: 20px; 
     }
+    #logo{
+        margin-left: 15px ;
+    }
+    #ph1 {
+        margin-left: 15px ;
+    }
     
     #heroimg {
         height: 300px;
@@ -654,6 +725,7 @@ footer {
         list-style: none;
         padding: 0;
         margin: 0;
+        margin-top:-70px;
     }
     nav li {
         margin: 0 10px;
@@ -707,8 +779,13 @@ footer {
         margin-right: 30%;
         margin-left: 5%;
     }
+    .logo-container{
+        width: 800px;
+    }
     #logofooter {
-        width: 45px;
+        width: 80px;
+        height: 100px;
+        margin-left: 30px;
     }
     #footerh1{
         font-size: 13pt;
@@ -718,8 +795,7 @@ footer {
         margin:auto;
     }
     #fb,
-    #x,
-    #ig {
+    #x {
         width: 45px;
         height: 45px;
         margin: 5px; 
@@ -739,7 +815,13 @@ footer {
         justify-content: space-between;
         padding: 5px;
     }
-
+    #logo{
+        margin-left: -5px ;
+    }
+    #ph1 {
+        margin-left: -15px ;
+        font-size: 15pt;
+    }
     .logo-container {
         display: flex;
         align-items: center;
@@ -760,6 +842,7 @@ footer {
         list-style: none;
         padding: 0;
         margin: 0;
+        margin-top: -70px;
     }
     #homebg{
         height: 130px;
@@ -840,6 +923,10 @@ footer {
     }
     #logofooter {
         width: 25px;
+        margin-left: 25px;
+    }
+    #logo-container {
+        width: 150px;
     }
     #footerh1{
         font-size: 8pt;
@@ -847,6 +934,9 @@ footer {
     #copyright{
         font-size: 7pt;
         margin:auto;
+    }
+    #icons {
+        width: 80px;
     }
     #fb, #x, #ig   {
     width: 20px;
