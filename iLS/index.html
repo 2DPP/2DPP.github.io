@@ -17,21 +17,30 @@
 </head>
 <body>
     
+ 
+      
     <div id="header">
         <div class="logo-container">
-            <img id="logo" src="Images/Logo.png" alt="ProblemPal Logo">
+          
+            <svg id="logo" width="186" height="375" viewBox="0 0 186 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35 22L27 19.5V130L48 113.5V35L43 28L35 22Z" fill="#217EAA" stroke="#2E93C5"/>
+                <path d="M65.5 48C62 42 48.5 35 48.5 35V113.5L68.5 105.5L69 55C69 55 69 54 65.5 48Z" fill="#0E77AE" stroke="#4596C1"/>
+                <path d="M33.5 374.5C8.5 375.5 0 365 0 365V182.5V0L9.5 2L23 12L26.5 19.5V130.5L33.5 125L47 115L64 107L78.5 103.5H98.5H111.5L129.5 110.5L144 119L162 135.5L175 153.5L179.5 166C179.5 166 185 179.5 185 181V196C185 196 187 197.5 175 196C163 194.5 159 192 159 192C159 192 145.5 182.5 145.5 181C145.5 179.5 138 166 138 166L127 153.5L111.5 145L98.5 142L78.5 145L61.5 153.5L47 166L39 181V204L47 223.5L64 241L85 248H106L129.5 236L138 227L144 214L162 204H175H186L179.5 227L158 262L132 279.5L106 286L85 289L69.5 286V361.5C69.5 361.5 58.5 373.5 33.5 374.5Z" fill="#3999C9"/>
+                </svg>
+                
             
-            <h1>Problem <br>Pal</h1>
-        </div>
+            <h1 id="ph1">Problem <br>Pal</h1>
+        </div>  
         <nav>
             <ul>
                 <li><a href="team.html" id="about-link">About</a></li>
                 <li><a href="#contacthead" id="contact-link">Contact</a></li>
             </ul>
         </nav>
+      
     </div>
            
-    </div>
+
 
     <div id="homebg"></div>
 
@@ -51,7 +60,9 @@
        
             </div>
     </div>
+<!-- Terms of Service Modal -->
 
+  
 <div id="myModal" class="modal">
    
     <div class="modal-content"> 
@@ -130,7 +141,7 @@
         <div>
             <div class="featimgcontainer"> 
                 <img class="featimg"src="Images/1AppHome.png">
-                <p class="feattextR">  Users are able to post complains using the post bar. The posts that are uploaded will show up in this "complaint feed".
+                <p class="feattextR">  Users are able to post complaints using the post bar. The posts that are uploaded will show up in this "complaint feed".
                 </p>
              </div>
              <div class="h4containerR"><h4> Admin Approval</h4></div>
@@ -147,7 +158,7 @@
     <div id='contacthead'> <h2> Contact</h2></div>
     <div id="contactbg"> 
     <div class="contactcontainer">
-        <form action="mailto:coddyriosa24@gmail.com" method="post">
+        <form action="Includes\process_form.php" method="post">
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
@@ -163,20 +174,64 @@
             <input type="submit" value="Submit">
         </form>
     </div>
-</div>
+</div>   
+ <div id="termsOfServiceContainer" class="terms-container">
+    <div class="terms-content">
+        
+      <h2>Terms of Service</h2><br>
+      
+
+      <br><h3>1. Acceptance of Terms</h3>
+      <p>By accessing and using ProblemPal,  you agree to comply with and be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you should not use the Service.</p>
+     <br><h3>2. Description of Service</h3>
+      <p>ProblemPal provides a platform for managing and resolving customer complaints. The Service includes features such as complaint submission, tracking, resolution management, and reporting tools.</p>
+      <br> <h3>3. Eligibility</h3>
+      <p>You must be at least 16 years old to use the Service. By using the Service, you represent and warrant that you have the right, authority, and capacity to enter into these Terms and to abide by all terms and conditions.</p>
+      <br> <h3>4. Account Registration</h3>
+      <p>To use certain features of the Service, you must register for an account. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete. You are responsible for safeguarding your password and for all activities that occur under your account.</p>
+      <br> <h3>5. Use of the Service</h3>
+      <p>You agree to use the Service only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+      <ul>
+        <br> <li>Use the Service in any way that violates any applicable federal, state, local, or international law or regulation.</li>
+        <br> <li>Transmit any unsolicited or unauthorized advertising, promotional materials, spam, or other forms of solicitation.</li>
+        <br> <li>Engage in any activity that interferes with or disrupts the Service or the servers and networks connected to the Service.</li>
+        <br> </ul>
+      <h3>6. Content</h3>
+      <p>You are responsible for all content you submit, post, or display on or through the Service. You grant ProblemPal a non-exclusive, royalty-free, worldwide, transferable, sub-licensable license to use, store, display, reproduce, modify, create derivative works, perform, and distribute your content in connection with operating and providing the Service.</p>
+      <br> <h3>7. Privacy</h3>
+      <p>Your privacy is important to us. Please review our <a href="Privacy.html">Privacy Policy</a>, which describes how we collect, use, and disclose information from users of the Service.</p>
+      <br> <h3>8. Intellectual Property</h3>
+      <p>The Service and its original content, features, and functionality are and will remain the exclusive property of ProblemPal and its licensors. The Service is protected by copyright, trademark, and other laws of both the Philippines and foreign countries.</p>
+      <br><h3>9. Termination</h3>
+      <p>We may terminate or suspend your access to the Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the Service will immediately cease.</p>
+      <br> <h3>10. Limitation of Liability</h3>
+      <p>In no event shall ProblemPal, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your use or inability to use the Service; (ii) any unauthorized access to or use of our servers and/or any personal information stored therein; (iii) any interruption or cessation of transmission to or from the Service.</p>
+      
+      <div class="button-container">
+        <button id="acceptButton">Accept</button>
+        <button id="rejectButton">Reject</button>
+      </div>
+    </div>
+  </div>
 
 
     <footer>
    
             <div id="footer-content">
                 <div class="logo-container" id="logocontainer">
-                    <img id="logofooter" src="Images/Logo.png" alt="ProblemPal Logo">
+                    <svg id="logofooter" width="186" height="25" viewBox="0 0 186 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path  d="M35 22L27 19.5V130L48 113.5V35L43 28L35 22Z" fill="#217EAA" stroke="#2E93C5"/>
+                        <path d="M65.5 48C62 42 48.5 35 48.5 35V113.5L68.5 105.5L69 55C69 55 69 54 65.5 48Z" fill="#0E77AE" stroke="#4596C1"/>
+                        <path d="M33.5 374.5C8.5 375.5 0 365 0 365V182.5V0L9.5 2L23 12L26.5 19.5V130.5L33.5 125L47 115L64 107L78.5 103.5H98.5H111.5L129.5 110.5L144 119L162 135.5L175 153.5L179.5 166C179.5 166 185 179.5 185 181V196C185 196 187 197.5 175 196C163 194.5 159 192 159 192C159 192 145.5 182.5 145.5 181C145.5 179.5 138 166 138 166L127 153.5L111.5 145L98.5 142L78.5 145L61.5 153.5L47 166L39 181V204L47 223.5L64 241L85 248H106L129.5 236L138 227L144 214L162 204H175H186L179.5 227L158 262L132 279.5L106 286L85 289L69.5 286V361.5C69.5 361.5 58.5 373.5 33.5 374.5Z" fill="#3999C9"/>
+                        </svg>
+                      
+                       
                     <h1 id="footerh1">Problem Pal</h1>
                 </div>
               <div id="copyrightcontainer">
                     <p id="copyright">© 2023 ProblemPal. All rights reserved.</p>
                 </div>
-            </div>
+            
         <!-- facebook -->
         <div id="icons">
             <a href ="https://www.facebook.com/profile.php?id=61555236084536&mibextid=ZbWKwL"><svg id = "fb"width="67" height="69" viewBox="0 0 67 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,124 +273,15 @@
                 </defs>
                 </svg>
               </a>  
-            <!-- instagram -->
-            <a href ="https://www.instagram.com/"> <svg id="ig" width="67" height="69" viewBox="0 0 67 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_d_72_626)">
-                                <rect y="0.5" width="64" height="64" rx="32" fill="white"/>
-                                    <rect x="0.5" y="1" width="63" height="63" rx="31.5" stroke="#133834"/>
-                                          <path d="M31.4672 48.5C26.9661 48.5 26.4355 48.4762 24.679 48.3994C23.3092 48.3544 21.9572 48.0759 20.6811 47.576C18.4733 46.7168 16.7275 44.9704 15.8691 42.7621C15.3885 41.4814 15.1292 40.1283 15.1025 38.7606C15 37.0078 15 36.4333 15 31.9671C15 27.4533 15.0238 26.9263 15.1025 25.179C15.1298 23.8132 15.389 22.4619 15.8691 21.183C16.7265 18.9719 18.4752 17.2239 20.6866 16.3673C21.9649 15.8846 23.3165 15.6247 24.6826 15.5988C26.43 15.5 27.0045 15.5 31.4672 15.5C36.0047 15.5 36.5262 15.5238 38.2552 15.5988C39.6248 15.6249 40.98 15.8848 42.2622 16.3673C44.473 17.2249 46.2213 18.9725 47.0798 21.183C47.5685 22.4806 47.829 23.8529 47.8501 25.2394C47.9525 26.9922 47.9525 27.5649 47.9525 32.0293C47.9525 36.4937 47.9269 37.0792 47.8501 38.8119C47.8228 40.1808 47.5628 41.5352 47.0816 42.817C46.2209 45.0267 44.4725 46.7739 42.2622 47.6327C40.9818 48.1125 39.6295 48.3717 38.2626 48.3994C36.5152 48.5 35.9425 48.5 31.4672 48.5ZM31.4049 18.3964C26.9295 18.3964 26.4647 18.4183 24.7174 18.497C23.6745 18.5108 22.6416 18.7033 21.6637 19.066C20.2196 19.6186 19.0769 20.7567 18.5185 22.1984C18.1529 23.187 17.9604 24.2312 17.9494 25.2851C17.8525 27.0581 17.8525 27.5228 17.8525 31.9671C17.8525 36.3583 17.8689 36.8907 17.9494 38.6527C17.9658 39.696 18.1582 40.729 18.5185 41.7083C19.0778 43.1491 20.2202 44.2863 21.6637 44.8388C22.6409 45.204 23.6742 45.3965 24.7174 45.4079C26.4885 45.5103 26.9551 45.5103 31.4049 45.5103C35.8931 45.5103 36.3579 45.4884 38.0906 45.4079C39.1342 45.3952 40.1678 45.2027 41.1461 44.8388C42.5813 44.2815 43.7166 43.1469 44.2749 41.7119C44.6397 40.7226 44.832 39.6779 44.8439 38.6234H44.864C44.9427 36.8743 44.9427 36.4077 44.9427 31.9378C44.9427 27.4679 44.9226 26.9977 44.8439 25.2503C44.8274 24.2083 44.635 23.1764 44.2749 22.1984C43.7179 20.7614 42.5824 19.6246 41.1461 19.066C40.168 18.7015 39.1342 18.509 38.0906 18.497C36.3213 18.3964 35.8584 18.3964 31.4049 18.3964ZM31.4672 40.4183C28.0455 40.4205 24.9597 38.3612 23.6486 35.201C22.3376 32.0406 23.0595 28.4016 25.4779 25.9812C27.8962 23.5608 31.5345 22.8357 34.696 24.144C37.8575 25.4523 39.9193 28.5364 39.9202 31.9579C39.9151 36.6256 36.1347 40.4092 31.4672 40.4183ZM31.4672 26.4652C28.4356 26.4652 25.978 28.9229 25.978 31.9543C25.978 34.9858 28.4356 37.4433 31.4672 37.4433C34.4986 37.4433 36.9562 34.9858 36.9562 31.9543C36.949 28.9256 34.4956 26.4723 31.4672 26.4652ZM40.2496 25.1607C39.1617 25.1567 38.2825 24.2725 38.2845 23.1846C38.2865 22.0968 39.169 21.2159 40.2569 21.2159C41.3447 21.2159 42.2271 22.0967 42.2293 23.1846C42.2297 23.7095 42.0211 24.213 41.6497 24.5837C41.2782 24.9545 40.7743 25.1621 40.2496 25.1607Z" fill="black"/>
-                            </g>
-                            <defs>
-                                    <filter id="filter0_d_72_626" x="0" y="0.5" width="67" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feOffset dx="3" dy="4"/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0.0555986 0 0 0 0 0.149942 0 0 0 0 0.140011 0 0 0 1 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_72_626"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_72_626" result="shape"/>
-                            </filter>
-                            </defs>
-                            </svg>
-                            </a>
+    
+            </div>
         </div>
-        </div>
-    </footer>
-     <script>
-        // Open the modal
-function openModal() {
-  document.getElementById('myModal').style.display = 'block';
-}
-
-// Close the modal
-function closeModal() {
-  document.getElementById('myModal').style.display = 'none';
-}
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-        var containers = document.querySelectorAll('.container');
-
-        function handleScroll() {
-            containers.forEach(function (container) {
-                var containerPosition = container.getBoundingClientRect().top;
-                var screenPosition = window.innerHeight / 1.5;
-
-                if (containerPosition < screenPosition) {
-                    container.classList.add("active");
-                }
-            });
-        }
-
-        window.addEventListener("scroll", handleScroll);
-
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            // Client-side validation
-            var valid = true;
-
-            // Validate first name
-            var fname = document.getElementById('fname').value;
-            if (fname.trim() === '') {
-                document.getElementById('fnameError').innerText = 'First name is required';
-                valid = false;
-            } else {
-                document.getElementById('fnameError').innerText = '';
-            }
-
-            // Validate last name
-            var lname = document.getElementById('lname').value;
-            if (lname.trim() === '') {
-                document.getElementById('lnameError').innerText = 'Last name is required';
-                valid = false;
-            } else {
-                document.getElementById('lnameError').innerText = '';
-            }
-
-            // Validate email
-            var email = document.getElementById('email').value;
-            if (!/\S+@\S+\.\S+/.test(email)) {
-                document.getElementById('emailError').innerText = 'Enter a valid email address';
-                valid = false;
-            } else {
-                document.getElementById('emailError').innerText = '';
-            }
-
-            // Validate message
-            var message = document.getElementById('message').value;
-            if (message.trim() === '') {
-                document.getElementById('messageError').innerText = 'Message is required';
-                valid = false;
-            } else {
-                document.getElementById('messageError').innerText = '';
-            }
-
-            // Prevent form submission if validation fails and stay on the same page
-            if (!valid) {
-                event.preventDefault();
-            } else {
-                // Example of asynchronous form submission using Fetch API
-                var formData = new FormData(this);
-
-                fetch('Includes/process_form.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    // Handle the response from the server
-                    console.log(data);
-                    
-                })
-                .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
-                   
-                });
-            }
-        });
-    });
-</script>
+        
+    </footer>    <script src="Scripts\openModal.js"></script>
+    <script src="Scripts\closeModal.js"></script>
+    <script src="Scripts\handleScroll.js"></script>
+    <script src="Scripts\acceptButton.js"></script>
+    <script src="Scripts\rejectButton.js"></script>
+    <script src="Scripts\downloadButton.js"></script>
+    <script src="Scripts\formSubmission.js"></script>
+</body> </html>
