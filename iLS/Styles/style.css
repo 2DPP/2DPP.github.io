@@ -855,10 +855,6 @@ footer {
     transition: transform 0.5s ease; 
    
 }
-.svg-download {
-    width: 100%;
-    height: 100%;
-}
 
 }
 
@@ -885,9 +881,6 @@ width: 100%;
 .spinning-image img {
     visibility: hidden !important;; 
 }
-.svg-download {
-    width: 100%;
-    height: 100%;
-}
+
 }
 
