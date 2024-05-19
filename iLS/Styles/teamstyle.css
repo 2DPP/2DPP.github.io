@@ -125,10 +125,7 @@ p {
 .aimg {
   margin-left: -40px;
 }
-#raniel {
-  width: 170px;
-  height: 200px;
-}
+
     
 /* storage for all profile info and motto */
   .container {
@@ -303,10 +300,7 @@ footer {
     width: 100px;
     height: 150px;
   }
-  #raniel{
-    width: 100px;
-    height: 150px;
-  }
+
   .pimage {
     width: 130px;
     height: 100px;
@@ -327,10 +321,7 @@ footer {
     width: 100px;
     height: 150px;
   }
-  #raniel{
-    width: 100px;
-    height: 150px;
-  } 
+
   .pimage {
     top: -15%;
     height: 120px;
@@ -387,10 +378,7 @@ footer {
     height: 150px;
 
   }
-  #raniel{
-    width: 100px;
-    height: 150px;
-  }
+
  
 }
 @media only screen and (max-width: 800px) { 
@@ -405,10 +393,7 @@ h2 {
   width: 100px;
   height: 150px;
 }
-#raniel{
-  width: 100px;
-  height: 150px;
-}
+
 .pimage{
   width: 100px;
 }
@@ -447,10 +432,7 @@ h2 {
     width: 100px;
     height: 150px;
   }
-  #raniel{
-    width: 100px;
-    height: 150px;
-  }
+
   .pimage{
     width: 100px;
   }
@@ -525,10 +507,7 @@ h2 {
     transition: transform 0.3s;
     margin: auto;
   }
-  #raniel {
-    width: 180%;
-    height: 200%;
-  }
+
   .aimg:hover {
     transform: scale(1.2);
   }
