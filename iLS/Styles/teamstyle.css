@@ -72,8 +72,8 @@ body {
       transform: scale(1.2);
     }
     
-    h2 {
-      font-size: 50pt;
+    .pfh2 {
+      font-size: 15pt;
       margin-top: 3%;
       margin-left: -20%;
      
@@ -135,7 +135,6 @@ p {
 }
 
 .profilename {
-
   background-color: #192bd2;
   border-radius: 25px;
   width: 20%;
@@ -329,31 +328,7 @@ footer {
   }
   
 }
-@media only screen and (min-width: 800px) {
-  #we {
-    margin-left: 70%;
-  }
-  
-  .profileinfo {
-    height: 230px;
-  }
-  .pimage {
-    top: -45%;
-  }
-  .container {
-    margin-top: 15px;
-  }
-  .profilename {
-    width: 250px;
-    margin-left: 23.5%;
-  }
-  h2 {
-    font-size: 15pt;
-  }
-}
-.profileinfo {
-  height: 250px;
-}
+
 
 @media only screen and (max-width: 900px) {
   #we {
@@ -387,7 +362,7 @@ footer {
 }
 h2 {
   margin-left: -35px;
-  font-size: 13pt;
+  font-size: 10pt;
 }
 .aimg{
   width: 100px;
@@ -426,7 +401,7 @@ h2 {
   }
   h2 {
     margin-left: -35px;
-    font-size: 13pt;
+    font-size: 10pt;
   }
   .aimg{
     width: 100px;
@@ -550,7 +525,7 @@ p {
   margin-top: 15px;
 }
 .pfname {
-  font-size: 10pt;
+  
 }
 .skills {
   margin-top: 25px;
