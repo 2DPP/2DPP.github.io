@@ -32,8 +32,8 @@ body:not(.terms-accepted) > :not(#termsOfServiceContainer):not(.modal) {
     text-align: center;
 }
 #qr {
-    width: 205px;
-    height: 205px;
+    width: 200px;
+    height: 200px;
    margin: 15px;
 }
 #header {
