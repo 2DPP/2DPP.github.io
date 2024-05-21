@@ -148,7 +148,7 @@ nav a {
 }
 
 #herop {
-    font-color: white;
+       color: white;
     font-size: 50pt;
     font-family: 'Roboto', sans-serif;
     margin-left: -150px; /* Adjusted margin to bring #herop closer */
