@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Utility function to detect class change
+//  function to detect class change
 (function () {
     var observer = new MutationObserver(function (mutations) {
         mutations.forEach(function (mutation) {
