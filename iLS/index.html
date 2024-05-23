@@ -160,8 +160,8 @@
     <div id='contacthead'> <h2> Contact</h2></div>
     <div id="contactbg"> 
     <div class="contactcontainer"> <!-- contact -->
-        <form action="mailto:coddyriosa24@gmail.com" method="post">
-         
+       <form action="https://api.web3forms.com/submit" method="POST">
+         <input type="hidden" name="access_key" value="f7e37805-af3f-4fb1-bc9f-e9b8a9741686">
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
@@ -173,7 +173,7 @@
 
             <label for="message">Message:</label>
             <textarea id="message" name="message" placeholder="Write something..." style="height:200px" required></textarea>
-
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
             <input type="submit" value="Submit">
         </form>
     </div>
