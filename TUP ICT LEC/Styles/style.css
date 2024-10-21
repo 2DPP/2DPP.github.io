@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(270deg, #ad5f00, #004d11a4);
     background-size: 600% 600%;
-    animation: gradientAnimation 15s ease infinite;
+    animation: gradientAnimation 3s ease infinite;
     color: white;
 }
 .container {
@@ -117,4 +117,49 @@ video {
   }
 video:hover {
   box-shadow: 0px 0px 35px 20px green;
+}
+@media only screen and (max-width: 500px) {
+    .container {
+        position: relative;
+        width: 90%;
+        max-width: 600px;
+        height: 670px;
+        border: 2px solid #ff7b00;
+        border-radius: 25px;
+        margin-top: 100px;
+        
+       
+    }
+    video {
+        border: 3px solid black;
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+    }    
+    #flappybird{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .container {
+        position: relative;
+        width: 90%;
+        max-width: 600px;
+        height: 670px;
+        background-color: rgb(114, 9, 155);
+        border: 2px solid #ff7b00;
+        
+       
+    }
+    video {
+        border: 3px solid black;
+        border-radius: 10px;
+        width: 400px;
+        height: 400px;
+    }    
+    #flappybird{
+        width: 200px;
+        height: 200px;
+    }
 }
