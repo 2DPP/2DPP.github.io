@@ -180,6 +180,7 @@ header {
     width: 50%;
     height: 300px; 
     display: flex;
+    background-color: #393B3D;
 }
 .items {
     margin: auto;
