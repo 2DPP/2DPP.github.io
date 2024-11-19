@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body {
+    background: #232527;
+    color: white;
+}
+header {
+    background: #191B1D;
+    border: 2px outset rgba(0, 0, 0, 0.356);
+}
+#logo{
+    position: relative;
+    margin-top: 2px;
+    margin-left: 25px;
+}
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+#left {
+    background-color: #191B1D;
+    width: 8%;
+    padding: 5px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column; 
+}
+
+#profile {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+#left img {
+    border-radius: 50px;
+    width: 30px;
+    height: 30px; 
+}
+
+#left h3 {
+    color: white;
+    font-size: 20px;
+}
+#left hr {
+    border: 0.1px solid #ccc; 
+    background-color: #ccc;
+    width: 98%;
+    height: 1.05px;
+}
+#left button{
+    background-color: #191B1D;
+    color: rgba(255, 255, 255, 0.342);
+    border-radius: 25px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.418);
+}
+#left button:hover{
+    color:white;
+    border: 1px solid rgb(255, 255, 255);
+}
+.SvgLink{
+    fill:none;
+    stroke: white;
+}
+.SvgLink:hover{
+    fill: white;
+}
+.link-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+.link-container b {
+    font-size: 14px;
+    margin: 0;
+}
+#right {
+    background-color: #232527;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#right h1{
+    margin-top: 40px;
+    margin-left: 45px;
+    font-size: 30pt;
+}
+#right h2 {
+   margin-top: 10px;
+    margin-left: 45px;
+}
+#seperator {
+    display: flex;
+    justify-content: space-between;
+    
+}
+#seperator a {
+    color: white;
+    text-decoration: none;
+}
+#seperator a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.friends img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    margin-top: 20px;
+}
+.friends {
+    max-width:100%;
+}
+.games{
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 35px;
+    
+}
+.games img {
+    margin: 5px;
+    border-radius: 25px;
+    width: 260px;
+}
