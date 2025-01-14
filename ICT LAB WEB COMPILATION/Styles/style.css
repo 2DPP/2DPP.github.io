@@ -88,3 +88,13 @@ a:hover{
         font-size: 7pt;
     }
 }
+@media only screen and (max-width: 800px) {
+    .group-containers{
+        width: 200px;
+        font-size: 9pt;
+        margin: auto;
+    }
+    a {
+        font-size: 7.5pt;
+    }
+}
