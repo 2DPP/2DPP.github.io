@@ -174,3 +174,21 @@ footer {
     background-color:#1D3E2F ;
     padding: 15px;
 }
+@media only screen and (max-width: 1105px) { 
+    #services { 
+        color: #295a44;
+        font-size: 50pt;
+    }
+.service-type{
+    width: 200px;
+    height: 200px;
+    font-size: 12pt;
+} 
+.service-type h1{
+    font-size: 16pt;
+
+}
+#services-container button{
+    padding: 10px;
+}
+}
