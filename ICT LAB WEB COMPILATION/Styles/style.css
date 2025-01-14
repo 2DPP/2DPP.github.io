@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+	background: linear-gradient(-45deg, #1100ff, #3b27af, #135972, #0d5544);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+    color:white;
+    text-shadow: 0px 3px 1px rgb(0, 0, 0);
+    
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+header {
+    text-align: center;
+    margin-top: 25px;
+}
+#container {
+    margin-top: 25px;
+    display: flex;
+}
+.group-containers{
+    background-color: rgba(13, 49, 167, 0.425);
+    border-radius: 25px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 0px 15px 1px;
+}
+.group-containers p, h2, h3{
+   
+}
+a {
+    color: white;
+   text-decoration: none;
+    border: 3px solid rgb(0, 132, 255);
+    background-color: rgb(0, 132, 255);
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.5s;
+}
+a:hover{
+    border: 3px solid #2600ff;
+    background-color: rgb(76, 228, 255);
+    color: #0011ff;
+    text-shadow: none;
+}
