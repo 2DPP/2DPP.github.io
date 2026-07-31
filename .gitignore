@@ -1,0 +1,9 @@
+# Windows system files 
+Thumbs.db 
+ehthumbs.db 
+desktop.ini 
+# Editor files 
+.vscode/ 
+# Temporary files 
+*.tmp 
+*.log 
